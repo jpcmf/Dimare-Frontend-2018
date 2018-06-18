@@ -12,4 +12,8 @@ let bootstrap = require('bootstrap-styl');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-    .stylus('resources/assets/stylus/app.styl', 'public/css', {use: [ bootstrap() ] });
+    .stylus('resources/assets/stylus/app.styl', 'public/css', {use: [ bootstrap() ] })
+    .extract(['jquery','bootstrap'])
+    .autoload({
+        jquery: ['$', 'window.jQuery', 'jQuery'],
+    });
