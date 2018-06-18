@@ -1,0 +1,121 @@
+//
+// Carousel Top
+// --------------------------------------------------
+
+.carousel-control
+    background-image none
+    &.left
+    &.right
+        background-image none
+
+.carousel-control .glyphicon {
+    display: none;
+}
+
+.carousel-caption
+    text-shadow none
+    display none
+    text-align: left;
+
+.carousel-indicators
+    margin-bottom 0
+
+.main-carousel
+    padding 0
+    margin-top: -90px;
+    .carousel-inner
+        .item-cover
+            img
+                object-fit cover
+                object-position center center
+                // object-fit: contain
+                // object-position: top center
+                overflow hidden
+                width 100%
+                height 100%!important
+
+    .carousel-indicators
+        li
+            // background-color rgba(255, 255, 255, 0.4)
+            background-color transparent
+            border-color #f7f4e2
+            border-width 2px
+            margin 0 3px
+            height 15px
+            width 15px
+            opacity .7
+        .active
+            background-color #f7f4e2
+            height 15px
+            width 15px
+            opacity 1
+
+.main-carousel
+    .carousel-inner
+        .item
+        .item-img
+            height 330px
+        .carousel-caption
+            display block
+            bottom 10px
+            // left 5%
+            // right 5%
+            // text-shadow none
+            h1
+                color: $carousel-title-color;
+                font-family $font-oswald;
+                font-size 23px
+                font-weight 200
+                margin 0
+                text-transform uppercase
+            p
+                font-size 16px
+                line-height 26px
+                margin 25px 0 25px 0
+            .btn-cotacao
+                border: solid 2px $button-border-color
+                color: $button-text-color;
+                display inline-block
+                font-family $font-oswald;
+                font-size 21px
+                font-weight 200
+                // margin 0px auto 20px
+                padding 5px 21px
+                // width 220px
+                text-align: center;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+// Small devices (tablets, 768px and up)
+@media (min-width: $screen-sm-min)
+    .main-carousel
+        // padding 25px 30px
+        .carousel-inner
+            .item
+            .item-img
+                height 454px
+            .carousel-caption
+                bottom 64px
+                h1
+                    font-size 69px
+                p
+                    // font-size 17px
+                    // line-height 26px
+                    // margin 20px 0 40px 0
+                .btn-cotacao
+                    // margin 20px auto 40px
+
+// Medium devices (desktops, 992px and up)
+@media (min-width: $screen-md-min)
+    .main-carousel
+        .carousel-inner
+            .item
+            .item-img
+                height 700px
+            .carousel-caption
+                bottom 200px
+                // left 25%
+                // right 25%

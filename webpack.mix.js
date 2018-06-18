@@ -1,5 +1,7 @@
 let mix = require('laravel-mix');
 let bootstrap = require('bootstrap-styl');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -17,3 +19,16 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .autoload({
         jquery: ['$', 'window.jQuery', 'jQuery'],
     });
+
+mix.webpackConfig({
+   plugins: [
+       new BrowserSyncPlugin({
+           files: [
+               'app/**/*',
+               'public/**/*',
+               'resources/views/**/*',
+               'routes/**/*'
+           ]
+       })
+   ]
+});

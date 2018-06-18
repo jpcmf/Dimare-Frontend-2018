@@ -1,10 +1,29 @@
-// @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-// @import "./node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
 
+// Overwriting variables of BS
 @import "variables.styl";
+
+// Bootstrap 3 Styl
 $icon-font-path = "~bootstrap-styl/fonts/"
 @import "~bootstrap-styl/bootstrap/index.styl"
 
-body {
-    // background: yellow;
+// Components
+@import 'components/carousel.styl';
+
+// Sections
+@import 'sections/header.styl';
+
+// Geral
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
