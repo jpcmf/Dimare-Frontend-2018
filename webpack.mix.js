@@ -1,5 +1,5 @@
 let mix = require('laravel-mix');
-
+let bootstrap = require('bootstrap-styl');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -12,4 +12,4 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .stylus('resources/assets/stylus/app.styl', 'public/css');
+    .stylus('resources/assets/stylus/app.styl', 'public/css', {use: [ bootstrap() ] });
