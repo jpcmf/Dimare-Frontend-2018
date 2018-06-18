@@ -22,7 +22,6 @@
 
 .main-carousel
     padding 0
-    margin-top: -90px;
     .carousel-inner
         .item-cover
             img
@@ -57,9 +56,9 @@
             height 330px
         .carousel-caption
             display block
-            bottom 10px
-            // left 5%
-            // right 5%
+            bottom 60px
+            left: inherit
+            right inherit
             // text-shadow none
             h1
                 color: $carousel-title-color;
@@ -92,15 +91,18 @@
 // Small devices (tablets, 768px and up)
 @media (min-width: $screen-sm-min)
     .main-carousel
+        margin-top: -90px;
         // padding 25px 30px
         .carousel-inner
             .item
             .item-img
                 height 454px
             .carousel-caption
-                bottom 64px
+                bottom 70px
+                // left: 5%;
+                // right: 5%;
                 h1
-                    font-size 69px
+                    font-size 49px
                 p
                     // font-size 17px
                     // line-height 26px
@@ -117,5 +119,8 @@
                 height 700px
             .carousel-caption
                 bottom 200px
-                // left 25%
-                // right 25%
+                // left 15%
+                // right 15%
+                h1 {
+                    font-size: 69px;
+                }
