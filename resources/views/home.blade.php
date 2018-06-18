@@ -50,4 +50,55 @@
 			<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div>
 	</section>
+    <section class="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="welcome__content">
+                        <div class="welcome__title">
+                            <h2>Dimare - Ambientes e móveis planejados </h2>
+                            <p>A Dimare oferece móveis planejados de qualidade superior para os mais diversos ambientes. Conheça!</p>
+                            <span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 hidden-xs hidden-sm">
+                                <div class="welcome__image">
+                                    <img class="img-responsive" src="{{asset('img/img-welcome.png')}}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="welcome__ambientes">
+                                    <a href="" class="thumb thumb-dorm">
+                                        <span class="txt">DORMITÓRIOS</span>
+                                        <span class="bg"></span>
+                                    </a>
+                                    <a href="" class="thumb thumb-dorm">
+                                        <span class="txt">DORMITÓRIOS</span>
+                                        <span class="bg"></span>
+                                    </a>
+                                    <a href="" class="thumb thumb-dorm">
+                                        <span class="txt">DORMITÓRIOS</span>
+                                        <span class="bg"></span>
+                                    </a>
+                                    <a href="" class="thumb thumb-dorm">
+                                        <span class="txt">DORMITÓRIOS</span>
+                                        <span class="bg"></span>
+                                    </a>
+                                    <a href="" class="thumb thumb-dorm">
+                                        <span class="txt">DORMITÓRIOS</span>
+                                        <span class="bg"></span>
+                                    </a>
+                                    <a href="" class="thumb thumb-dorm">
+                                        <span class="txt">DORMITÓRIOS</span>
+                                        <span class="bg"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 @endsection

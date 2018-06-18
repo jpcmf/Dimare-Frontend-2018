@@ -4,13 +4,17 @@
 
 .navbar-brand {
     padding-top: 24px
+
+    @media (min-width: $screen-md-min) {
+        margin-right: 50px;
+    }
+
     img {
         max-width: 134px;
     }
 }
 
 .navbar-nav > li > a {
-    // color: #fff;
     font-family: $font-oswald;
     font-weight: 200;
     text-transform: uppercase;
@@ -20,5 +24,14 @@
 
     @media (min-width: $screen-md-min) {
         font-size: 20px;
+    }
+}
+
+.navbar-nav.navbar-right > li > a {
+    font-size: 16px;
+    color: $brand-primary;
+
+    &:hover {
+        color: #fff;
     }
 }

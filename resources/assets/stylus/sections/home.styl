@@ -1,0 +1,130 @@
+.welcome {
+    padding: 31px 0 31px 0;
+
+    @media (min-width: $screen-md-min) {
+        padding: 99px 0 61px 0;
+    }
+}
+
+.welcome__content {
+    position: relative;
+}
+
+.welcome__image {
+    background-color: $bg-img-firula;
+    max-width: 439px;
+
+    img {
+        position: relative;
+        left: 30px;
+        top: -30px;
+    }
+}
+
+.welcome__title {
+    background-color: #fff;
+    padding: 25px;
+
+    top: 0;
+    z-index: 1;
+    left: 0;
+
+    @media (min-width: $screen-md-min) {
+        position: absolute;
+        left: 240px;
+    }
+
+    h2 {
+        color: $brand-secondary;
+        font-family: $font-oswald;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    span {
+        background-color: $brand-secondary;
+        display: block;
+        height: 128px;
+        left: 13px;
+        position: absolute;
+        top: 50px;
+        width: 3px;
+    }
+}
+
+.welcome__ambientes {
+    display: grid;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 222px;
+
+    @media (min-width: $screen-sm-min) {
+        grid-template-columns: 1fr 1fr;
+        max-width: 462px;
+    }
+
+    @media (min-width: $screen-md-min) {
+        padding-top: 155px;
+        margin-left: 0;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        margin-left: -80px;
+    }
+
+    .thumb {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $font-oswald;
+        font-size: 27px;
+        font-weight: 300;
+        height: 99px;
+        position: relative;
+        width: 222px;
+        z-index: 1;
+
+        .bg,
+        .txt {
+            transition: opacity ease 300ms;
+            opacity: 1;
+        }
+
+        .bg {
+            background-color: rgba(0, 0, 0, 0.67);
+            display: block;
+            height: 100%
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 0;
+        }
+
+        .txt {
+            position: relative;
+            z-index: 1;
+        }
+
+        &.thumb-dorm {
+            background: url(/img/img-dorm.png) no-repeat center center;
+        }
+
+        &:hover {
+            text-decoration: none;
+            .bg,
+            .txt {
+                opacity: 0;
+            }
+
+        }
+    }
+}
