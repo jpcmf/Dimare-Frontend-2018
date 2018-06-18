@@ -72,26 +72,29 @@
                                         <span class="txt">DORMITÓRIOS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="" class="thumb thumb-dorm">
-                                        <span class="txt">DORMITÓRIOS</span>
+                                    <a href="" class="thumb thumb-closet">
+                                        <span class="txt">CLOSETS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="" class="thumb thumb-dorm">
-                                        <span class="txt">DORMITÓRIOS</span>
+                                    <a href="" class="thumb thumb-coz">
+                                        <span class="txt">COZINHAS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="" class="thumb thumb-dorm">
-                                        <span class="txt">DORMITÓRIOS</span>
+                                    <a href="" class="thumb thumb-corp">
+                                        <span class="txt">CORPORATIVOS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="" class="thumb thumb-dorm">
-                                        <span class="txt">DORMITÓRIOS</span>
+                                    <a href="" class="thumb thumb-home">
+                                        <span class="txt">HOME THEATERS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="" class="thumb thumb-dorm">
-                                        <span class="txt">DORMITÓRIOS</span>
+                                    <a href="" class="thumb thumb-ban">
+                                        <span class="txt">BANHEIROS</span>
                                         <span class="bg"></span>
                                     </a>
+                                </div>
+                                <div class="welcome__button text-center">
+                                    <a href="" class="btn btn-outline center-block">Ver todas</a>
                                 </div>
                             </div>
                         </div>
@@ -99,6 +102,75 @@
                 </div>
             </div>
         </div>
-
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="blog__title">
+                        <h2>Blog</h2>
+                        <p>Notícias, dicas e tendências do universo moveleiro.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="blog__content">
+                        <div class="blog__image">
+                            <img src="http://via.placeholder.com/238x194" alt="">
+                        </div>
+                        <div class="blog__info">
+                            <p>Lorem Ipsum. Proin gravida nibh vel velit</p>
+                            <a href="">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="blog__content">
+                        <div class="blog__image">
+                            <img src="http://via.placeholder.com/238x194" alt="">
+                        </div>
+                        <div class="blog__info">
+                            <p>Lorem Ipsum. Proin gravida nibh vel velit</p>
+                            <a href="">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="blog__content">
+                        <div class="blog__image">
+                            <img src="http://via.placeholder.com/238x194" alt="">
+                        </div>
+                        <div class="blog__info">
+                            <p>Lorem Ipsum. Proin gravida nibh vel velit</p>
+                            <a href="">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="customer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="customer__blc customer__blc--pedido">
+                        <span class="hidden-xs"></span>
+                        <div class="customer__inside">
+                            <h2>Acompanhe seu Pedido</h2>
+                            <p>Quer saber se os móveis para seu ambiente planejado já estão prontos? Acompanhe seu pedido!</p>
+                            <a href="" class="btn btn-outline center-block">Ver pedido</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="customer__blc customer__blc--lojista">
+                        <div class="customer__inside">
+                            <h2>Seja um Lojista</h2>
+                            <p>Seja um parceiro Dimare e ofereça a seus clientes o melhor em móveis planejados. Fale conosco e conheça as vantagens!</p>
+                            <a href="" class="btn btn-outline center-block">QUERO SER LOJISTA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection

@@ -118,6 +118,26 @@
             background: url(/img/img-dorm.png) no-repeat center center;
         }
 
+        &.thumb-closet {
+            background: url(/img/img-closet.png) no-repeat center center;
+        }
+
+        &.thumb-coz {
+            background: url(/img/img-coz.png) no-repeat center center;
+        }
+
+        &.thumb-corp {
+            background: url(/img/img-corp.png) no-repeat center center;
+        }
+
+        &.thumb-home {
+            background: url(/img/img-home.png) no-repeat center center;
+        }
+
+        &.thumb-ban {
+            background: url(/img/img-ban.png) no-repeat center center;
+        }
+
         &:hover {
             text-decoration: none;
             .bg,
@@ -126,5 +146,150 @@
             }
 
         }
+    }
+}
+
+.welcome__button {
+    margin-top: 29px
+    @media (min-width: $screen-md-min) {
+        margin-left: 0;
+        max-width: 462px;
+
+        .btn {
+            max-width: 105px;
+            padding-top: 2px;
+            padding-bottom: 2px
+        }
+    }
+
+    @media (min-width: $screen-lg-min) {
+        margin-left: -80px;
+    }
+}
+
+.blog {
+    background: url(/img/dots-background.png) repeat-y center center;
+    min-height: 460px;
+    padding-top: 22px
+}
+
+.blog__title {
+    text-align: center;
+    margin-bottom: 30px
+
+    h2 {
+        border-bottom: solid 3px $brand-primary;
+        color: $brand-secondary;
+        display: inline-block;
+        font-family: $font-oswald;
+        font-size: 30px;
+        font-weight: 300;
+        padding-bottom: 3px
+        text-align: right;
+        text-transform: uppercase;
+        width: 130px;
+        margin-bottom: 30px
+        margin-top: 0
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.blog__content {
+    margin: 0 auto
+    max-width: 236px;
+}
+
+.blog__image {
+    background: url(/img/img-rectangle-blog.png) no-repeat center center;
+    max-width: 236px;
+    height: 221px
+
+    img {
+        position: relative;
+        left: 23px;
+        top: 13px;
+    }
+}
+
+.blog__info {
+    margin-top: 12px
+    text-transform: uppercase;
+
+    p,a {
+        letter-spacing: 0.7px;
+    }
+
+    a {
+        color: $text-color
+        font-family: $font-oswald
+        border-bottom: solid 2px $brand-primary;
+    }
+}
+
+.customer {
+    padding-top: 109px
+    position: relative
+
+    span {
+        display: block;
+        height: 461px;
+        width: 414px;
+        left -10px
+        background-color: $bg-img-firula
+        position: absolute
+        top -27px
+        z-index: -1
+
+        @media (min-width: $screen-lg-min) {
+            left 90px
+        }
+    }
+}
+
+
+.customer__blc {
+    height: 390px;
+    margin: 0 auto
+    max-width: 935px;
+}
+
+.customer__blc--pedido {
+    background: url(/img/img-pedido.png) no-repeat center center
+
+    .customer__inside {
+        float: right;
+    }
+}
+
+.customer__blc--lojista {
+    background: url(/img/img-lojista.png) no-repeat center center
+}
+
+.customer__inside {
+    background: url(/img/dots-background-black.png) no-repeat center center
+    color: #fff;
+    max-width: 468px;
+    height: 390px;
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    text-align: center
+
+    h2 {
+        font-family: $font-oswald;
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        margin: 0
+        text-transform: uppercase
+    }
+
+    p {
+        letter-spacing: 0.4px;
+        padding: 28px 0
     }
 }
