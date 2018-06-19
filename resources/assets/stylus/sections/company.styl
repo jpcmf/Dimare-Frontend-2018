@@ -58,5 +58,152 @@
 .fabric {
     background: url('/img/dots-background-black2.png') no-repeat center center;
     height: 425px;
+    margin-top: 30px
     width: 100%;
+}
+
+.fabric__images {
+    margin-top: -32px
+
+    img {
+        margin: 8px 0
+    }
+}
+
+.fabric__text {
+    align-items: center
+    display: flex
+    height: 425px;
+
+    p {
+        color: #fff;
+        letter-spacing: 0.4px;
+    }
+}
+
+.social {
+    padding-top: 100px
+}
+
+.social__content {
+    p {
+        padding-left: 25px;
+    }
+}
+
+.social__title {
+    position: relative
+    padding: 25px;
+
+    h2 {
+        color: $brand-secondary;
+        font-family: $font-oswald;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    span {
+        background-color: $brand-secondary;
+        display: block;
+        height: 128px;
+        left: 0;
+        position: absolute;
+        top: 10px;
+        width: 3px;
+    }
+}
+
+.social__blc {
+    border: solid 3px $brand-secondary;
+    height: 289px;
+    // margin-top: 50px
+    overflow: hidden;
+    max-width: 584px;
+    margin: 50px auto 0;
+}
+
+.social__inner {
+    height: 700px;
+    overflow-x: scroll;
+    padding: 30px 35px 30px 87px
+
+    ul {
+        list-style: none;
+        padding: 0
+
+        li {
+            padding: 14px 0
+        }
+    }
+}
+
+.social__carousel {
+    background-color: $bg-img-firula;
+    height: auto;
+    margin: 55px auto 0;
+    max-width: 940px;
+    padding-bottom: 69px
+
+    @media (min-width: $screen-md-min) {
+        height: 526px;
+        padding: 30px 96px
+    }
+
+    .carousel-inner {
+        overflow: inherit;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .glyphicon-chevron-left {
+        display: none;
+        background: url(/img/seta-esquerda.png) no-repeat center center;
+        margin-left: -120px
+
+        @media (min-width: $screen-md-min) {
+            display: block;
+        }
+    }
+
+    .glyphicon-chevron-right {
+        display: none;
+        background: url(/img/seta-direita.png) no-repeat center center;
+        margin-right: -120px
+
+        @media (min-width: $screen-md-min) {
+            display: block;
+        }
+    }
+
+    .glyphicon-chevron-left:before,
+    .glyphicon-chevron-right:before {
+        display: none;
+    }
+
+    .carousel-caption {
+        bottom: -55px
+        color: $text-color;
+        font-size: 15px;
+        left: 0
+        padding: 0
+        right: 0
+        text-align: left;
+        text-shadow: none;
+
+        p {
+            margin: 0 0 0 15px;
+        }
+
+        @media (min-width: $screen-md-min) {
+            bottom: -80px
+
+            p {
+                margin: 0
+            }
+        }
+
+    }
 }

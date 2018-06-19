@@ -62,23 +62,98 @@
     <section class="fabric">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
-                    <img src="{{asset('img/img-fabric1.png')}}" alt="">
-                    <img src="{{asset('img/img-fabric2.png')}}" alt="">
-                    <img src="{{asset('img/img-fabric3.png')}}" alt="">
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <div class="fabric__images">
+                        <img src="{{asset('img/img-fabric1.png')}}" alt="">
+                        <img src="{{asset('img/img-fabric2.png')}}" alt="">
+                        <img src="{{asset('img/img-fabric3.png')}}" alt="">
+                    </div>
                 </div>
-                <div class="col-sm-8">
-                    <p class="fabric__text">
-                        A Dimare aplica em seus produtos matéria-prima da melhor qualidade, selecionada entre seletos fornecedores - como Duratex, Eucatex e Berneck - e emprega equipamentos e tecnologia de ponta. <br><br>
-                        Com profissionais altamente qualificados, oferece produtos fabricados com excelência, de alto padrão, que harmonizam ambientes, trazendo personalização e exclusividade para clientes e consumidores. <br><br>
-                        Agilidade, distribuição nacional e segurança no transporte. Os móveis Dimare são condicionados em embalagens especialmente desenvolvidas para um transporte seguro, que previne danos e oferece um racional aproveitamento do espaço.
-                    </p>
+                <div class="col-sm-12 col-md-8">
+                    <div class="fabric__text">
+                        <p>
+                            A Dimare aplica em seus produtos matéria-prima da melhor qualidade, selecionada entre seletos fornecedores - como Duratex, Eucatex e Berneck - e emprega equipamentos e tecnologia de ponta. <br><br>
+                            Com profissionais altamente qualificados, oferece produtos fabricados com excelência, de alto padrão, que harmonizam ambientes, trazendo personalização e exclusividade para clientes e consumidores. <br><br>
+                            Agilidade, distribuição nacional e segurança no transporte. Os móveis Dimare são condicionados em embalagens especialmente desenvolvidas para um transporte seguro, que previne danos e oferece um racional aproveitamento do espaço.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
     <section class="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="social__content">
+                        <div class="social__title">
+                            <h2>
+                                <h2>Responsabilidade Social: ações Dimare em prol da comunidade</h2>
+                                <span></span>
+                            </h2>
+                        </div>
+                        <p>
+                            A Dimare acredita que, mais do que cumprir seus deveres como empresa, tem como responsabilidade estender este compromisso com toda a sociedade. <br><br>
+                            Através do PROBEM, Programa de Responsabilidade Marel, atua em diversas áreas, com o objetivo de promover o bem-estar social e o cuidado com o meio ambiente. <br><br>
+                            A empresa investe ainda em programas de treinamento, ações de conscientização e defesa do meio ambiente, no lazer dos seus colaboradores e familiares. Incentiva também a educação e a formação profissional, além de muitas outras ações que você pode conhecer na galeria abaixo.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="social__blc">
+                        <div class="social__inner">
+                            <ul>
+                                <li><a href=""><img src="{{asset('/img/logo-probem-verde.png')}}" alt=""></a></li>
+                                <li><a href=""><img src="{{asset('/img/logo-probem-comun.png')}}" alt=""></a></li>
+                                <li><a href=""><img src="{{asset('/img/logo-probem-colab.png')}}" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="social__carousel">
+                        <div id="socialCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#socialCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#socialCarousel" data-slide-to="1"></li>
+                                <li data-target="#socialCarousel" data-slide-to="2"></li>
+                            </ol>
 
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="{{asset('/img/img-social1.png')}}" alt="">
+                                    <div class="carousel-caption">
+            							<p>Brinquedoteca - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
+            						</div>
+                                </div>
+
+                                <div class="item">
+                                    <img src="{{asset('/img/img-social1.png')}}" alt="">
+                                    <div class="carousel-caption">
+            							<p>Brinquedoteca - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
+            						</div>
+                                </div>
+
+                                <div class="item">
+                                    <img src="{{asset('/img/img-social1.png')}}" alt="">
+                                    <div class="carousel-caption">
+            							<p>Brinquedoteca - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
+            						</div>
+                                </div>
+                            </div>
+
+                            <a class="left carousel-control" href="#socialCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#socialCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 @endsection
