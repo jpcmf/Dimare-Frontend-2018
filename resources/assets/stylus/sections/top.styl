@@ -1,0 +1,29 @@
+.top {
+    background: url('/img/bg-top-interna.png') no-repeat center center;
+    height: 360px
+    padding-top: 160px
+    background-size: cover;
+
+    @media (min-width: $screen-sm-min) {
+        margin-top: -90px
+    }
+
+    h2 {
+        color: $brand-primary
+        font-family: $font-oswald;
+        font-size: 69px;
+        font-weight: 200;
+        margin: 0;
+    }
+
+    .breadcrumb {
+        padding-left: 0
+        padding-right: 0
+        text-transform: uppercase
+        font-size: 12px;
+    }
+    .breadcrumb > li,
+    .breadcrumb > li + li:before {
+        color: #fff;
+    }
+}

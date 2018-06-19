@@ -64,35 +64,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-3">
-                        <a class="footer__link" href="">EMPRESA</a>
-                        <a class="footer__link" href="">ONDE COMPRAR</a>
-                        <a class="footer__link" href="">BLOG</a>
-                        <a class="footer__link" href="">ÁREA RESTRITA</a>
+                        <a href="">EMPRESA</a>
+                        <a href="">ONDE COMPRAR</a>
+                        <a href="">BLOG</a>
+                        <a href="">ÁREA RESTRITA</a>
                     </div>
-                    <div class="col-xs-12 col-md-3">
-                        <h3>PRODUTOS</h3>
-                        <a class="footer__link footer__link--white" href="">AMBIENTES</a>
-                        <a class="footer__link footer__link--white" href="">DIFERENCIAIS</a>
-                        <a class="footer__link footer__link--white" href="">ACABAMENTOS</a>
-                        <a class="footer__link footer__link--white" href="">COLEÇÕES</a>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <h3>CONTATO</h3>
-                        <a class="footer__link footer__link--white" href="">FALE CONOSCO</a>
-                        <a class="footer__link footer__link--white" href="">SEJA UM LOJISTA</a>
-                        <a class="footer__link footer__link--white" href="">ACOMPANHE SEU PEDIDO</a>
-                    </div>
-                    <div class="col-xs-12 col-md-3 footer__logo">
-                        <img class="" src="{{asset('img/logo-dimare-rodape@2x.png')}}" alt="Dimare">
-                        <ul class="list-inline footer__social">
-                            <li><a href=""><img src="{{asset('img/instagram@2x.png')}}" alt="Instagram"></a></li>
-                            <li><a href=""><img src="{{asset('img/facebook@2x.png')}}" alt="Facebook"></a></li>
-                        </ul>
-                    </div>
+                    <div class="col-xs-12 col-md-3"></div>
+                    <div class="col-xs-12 col-md-3"></div>
+                    <div class="col-xs-12 col-md-3"></div>
                 </div>
-            </div>
-            <div class="footer__copy text-center">
-                <p>© Copyright - Todos os direitos reservados - Dimare 2018 • Política de Privacidade • Desenvolvido por Agência Cupola</p>
             </div>
         </footer>
 

@@ -1,0 +1,62 @@
+.history__image {
+    background-color: $bg-img-firula;
+    max-width: 430px;
+    height: 500px
+    position: relative
+    top: -40px
+    float: left;
+    width: 50%
+
+    img {
+        position: relative
+        top: -20px
+        left: 25px
+    }
+}
+
+.history__content {
+    float: left;
+
+    @media (min-width: $screen-md-min) {
+        margin-left: 80px
+        width: 40%;
+    }
+}
+
+.history__content p {
+    margin-top: 20px
+}
+
+.history__title {
+    h2 {
+        color: $brand-secondary;
+        font-family: $font-oswald;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 20px
+        margin-top: 34px
+        text-transform: uppercase;
+    }
+
+    span {
+        display: block;
+        background-color: $brand-primary;
+        height: 3px
+        max-width: 195px;
+        position: relative;
+        left: -140px
+    }
+}
+
+.history__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+}
+
+.fabric {
+    background: url('/img/dots-background-black2.png') no-repeat center center;
+    height: 425px;
+    width: 100%;
+}
