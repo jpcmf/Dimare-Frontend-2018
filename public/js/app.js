@@ -9,9 +9,9 @@ module.exports = __webpack_require__(3);
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-//
+/* WEBPACK VAR INJECTION */(function($) {//
 // /**
 //  * First we will load all of this project's JavaScript dependencies which
 //  * includes Vue and other libraries. It is a great starting point when
@@ -33,6 +33,30 @@ module.exports = __webpack_require__(3);
 // const app = new Vue({
 //     el: '#app'
 // });
+
+$(function () {
+
+    // dropdown menu parent item clickable
+    function dropdownClickable() {
+        if ($(window).width() > 767) {
+            $('.navbar .dropdown').hover(function () {
+                $(this).find('.dropdown-menu').first().stop(true, true).delay(30).slideDown();
+            }, function () {
+                $(this).find('.dropdown-menu').first().stop(true, true).delay(30).slideUp();
+            });
+
+            $('.navbar .dropdown > a').click(function () {
+                location.href = this.href;
+            });
+        }
+    }
+    dropdownClickable();
+
+    $(window).resize(function () {
+        dropdownClickable();
+    });
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 3 */

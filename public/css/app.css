@@ -7026,21 +7026,35 @@ footer h3 {
 }
 .top {
   background: url("/img/bg-top-interna.png") no-repeat center center;
-  height: 360px;
-  padding-top: 160px;
+  height: 180px;
+  padding-top: 50px;
   background-size: cover;
 }
 @media (min-width: 768px) {
   .top {
+    height: 260px;
     margin-top: -90px;
+    padding-top: 130px;
+  }
+}
+@media (min-width: 992px) {
+  .top {
+    height: 360px;
+    padding-top: 160px;
   }
 }
 .top h2 {
   color: #c4a480;
   font-family: 'Oswald', sans-serif;
-  font-size: 69px;
+  font-size: 49px;
   font-weight: 200;
   margin: 0;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .top h2 {
+    font-size: 69px;
+  }
 }
 .top .breadcrumb {
   padding-left: 0;
@@ -7461,6 +7475,17 @@ footer h3 {
   margin: 55px auto 0;
   max-width: 940px;
   padding-bottom: 69px;
+  position: relative;
+}
+.social__carousel span.bg-firula {
+  background-color: #c4a480;
+  height: 475px;
+  max-width: 917px;
+  position: absolute;
+  top: 80px;
+  left: -30px;
+  width: 100%;
+  z-index: -1;
 }
 @media (min-width: 992px) {
   .social__carousel {
@@ -7499,7 +7524,7 @@ footer h3 {
   display: none;
 }
 .social__carousel .carousel-caption {
-  bottom: -55px;
+  bottom: -65px;
   color: #161515;
   font-size: 15px;
   left: 0;
@@ -7511,12 +7536,207 @@ footer h3 {
 .social__carousel .carousel-caption p {
   margin: 0 0 0 15px;
 }
+@media (min-width: 768px) {
+  .social__carousel .carousel-caption {
+    bottom: -55px;
+  }
+}
 @media (min-width: 992px) {
   .social__carousel .carousel-caption {
     bottom: -80px;
   }
   .social__carousel .carousel-caption p {
     margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .products {
+    padding-bottom: 69px;
+  }
+}
+.products__ambiente {
+  margin-top: 34px;
+}
+@media (min-width: 992px) {
+  .products__ambiente {
+    margin-top: 0;
+  }
+}
+.products__diferenciais {
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .products__diferenciais {
+    margin-top: 280px;
+  }
+}
+.products__acabamentos {
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .products__acabamentos {
+    margin-top: 40px;
+  }
+}
+.products__colecoes {
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .products__colecoes {
+    margin-top: 470px;
+  }
+}
+.products__image {
+  background-color: #e9e9e9;
+  position: relative;
+  float: left;
+}
+.products__image img {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .products__image.products__image--ambiente {
+    height: 391px;
+    top: -40px;
+  }
+  .products__image.products__image--ambiente img,
+  .products__image.products__image--ambiente .hover-effect .bg {
+    left: 25px;
+    top: -30px;
+  }
+}
+@media (min-width: 992px) {
+  .products__image.products__image--diferenciais {
+    height: 391px;
+    top: -40px;
+  }
+  .products__image.products__image--diferenciais img,
+  .products__image.products__image--diferenciais .hover-effect .bg {
+    left: 25px;
+    top: -30px;
+  }
+}
+@media (min-width: 992px) {
+  .products__image.products__image--acabamentos,
+  .products__image.products__image--colecoes {
+    height: 268px;
+    top: 0px;
+    float: right;
+  }
+  .products__image.products__image--acabamentos img,
+  .products__image.products__image--colecoes img,
+  .products__image.products__image--acabamentos .hover-effect .bg,
+  .products__image.products__image--colecoes .hover-effect .bg {
+    left: 25px;
+    top: -30px;
+  }
+  .products__image.products__image--acabamentos h2,
+  .products__image.products__image--colecoes h2 {
+    background-color: #fff;
+    color: #841d2b;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 12px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 260px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .products__image.products__image--acabamentos,
+  .products__image.products__image--colecoes {
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .products__image.products__image--colecoes {
+    height: 190px;
+  }
+}
+.products__content.products__content--ambiente,
+.products__content.products__content--diferenciais,
+.products__content.products__content--acabamentos,
+.products__content.products__content--colecoes {
+  float: left;
+}
+@media (min-width: 992px) {
+  .products__content.products__content--ambiente {
+    position: absolute;
+    top: 340px;
+    left: 60px;
+    width: 25%;
+    float: none;
+  }
+  .products__content.products__content--ambiente h2,
+  .products__content.products__content--ambiente p {
+    padding: 0 0 0 25px;
+  }
+  .products__content.products__content--diferenciais {
+    position: absolute;
+    top: 340px;
+    left: 60px;
+    float: none;
+  }
+  .products__content.products__content--diferenciais h2,
+  .products__content.products__content--diferenciais p {
+    padding: 0 0 0 25px;
+  }
+  .products__content.products__content--acabamentos,
+  .products__content.products__content--colecoes {
+    max-width: 500px;
+    float: right;
+    margin-top: 22px;
+    position: relative;
+  }
+  .products__content.products__content--acabamentos p,
+  .products__content.products__content--colecoes p {
+    text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  .products__content.products__content--acabamentos,
+  .products__content.products__content--colecoes {
+    float: left;
+  }
+}
+.products__title h2 {
+  color: #841d2b;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-top: 34px;
+  text-transform: uppercase;
+}
+.products__title span {
+  background-color: #841d2b;
+  display: block;
+  position: absolute;
+  width: 3px;
+}
+.products__title.products__title--ambiente span {
+  left: 0;
+  top: -30px;
+  height: 253px;
+}
+.products__title.products__title--diferenciais span {
+  left: 0;
+  top: -70px;
+  height: 253px;
+}
+.products__title.products__title--acabamentos span,
+.products__title.products__title--colecoes span {
+  top: -115px;
+  height: 173px;
+  right: -13px;
+}
+@media (min-width: 1200px) {
+  .products__title.products__title--acabamentos span,
+  .products__title.products__title--colecoes span {
+    right: -55px;
   }
 }
 html {
@@ -7535,4 +7755,23 @@ a:hover {
 }
 .container-fluid {
   padding: 0;
+}
+.hover-effect {
+  position: relative;
+  display: block;
+}
+.hover-effect .bg {
+  background-color: rgba(196,164,128,0.72);
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: opacity ease 300ms;
+  transition: opacity ease 300ms;
+  width: 100%;
+  z-index: 0;
+}
+.hover-effect:hover .bg {
+  opacity: 1;
 }

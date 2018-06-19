@@ -1,19 +1,31 @@
 .top {
     background: url('/img/bg-top-interna.png') no-repeat center center;
-    height: 360px
-    padding-top: 160px
+    height: 180px
+    padding-top: 50px
     background-size: cover;
 
     @media (min-width: $screen-sm-min) {
+        height: 260px
         margin-top: -90px
+        padding-top: 130px
+    }
+
+    @media (min-width: $screen-md-min) {
+        height: 360px
+        padding-top: 160px
     }
 
     h2 {
         color: $brand-primary
         font-family: $font-oswald;
-        font-size: 69px;
+        font-size: 49px;
         font-weight: 200;
         margin: 0;
+        text-transform: uppercase;
+
+        @media (min-width: $screen-md-min) {
+            font-size: 69px;
+        }
     }
 
     .breadcrumb {

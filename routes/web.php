@@ -30,7 +30,9 @@ Route::get('/acompanhe-seu-pedido', function () {
     return view('track-your-order');
 });
 
-
+Route::get('/produtos', function () {
+    return view('products');
+});
 Route::get('/produtos/ambientes', function () {
     return view('products/parts-of-the-house');
 });

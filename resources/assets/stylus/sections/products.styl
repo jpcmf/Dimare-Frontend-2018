@@ -1,0 +1,240 @@
+.products {
+    @media (min-width: $screen-md-min) {
+        padding-bottom: 69px;
+    }
+}
+
+.products__ambiente {
+    margin-top: 34px;
+
+    @media (min-width: $screen-md-min) {
+        margin-top: 0;
+    }
+}
+
+.products__diferenciais {
+    margin-top: 0;
+
+    @media (min-width: $screen-md-min) {
+        margin-top: 280px;
+    }
+}
+
+.products__acabamentos {
+    margin-top: 0;
+
+    @media (min-width: $screen-md-min) {
+        margin-top: 40px;
+    }
+}
+
+.products__colecoes {
+    margin-top: 0;
+
+    @media (min-width: $screen-md-min) {
+        margin-top: 470px;
+    }
+}
+
+.products__image {
+    background-color: $bg-img-firula;
+    // max-width: 430px;
+    // height: 500px
+    position: relative
+    float: left;
+    // width: 50%
+
+    img {
+        position: relative;
+    }
+
+    &.products__image--ambiente {
+
+        @media (min-width: $screen-md-min) {
+            height: 391px
+            top: -40px
+            // max-width: 940px;
+
+            img,
+            .hover-effect .bg {
+                left: 25px;
+                top: -30px;
+            }
+        }
+    }
+
+    &.products__image--diferenciais {
+
+        @media (min-width: $screen-md-min) {
+            height: 391px
+            top: -40px
+            // max-width: 770px;
+
+            img,
+            .hover-effect .bg {
+                left: 25px;
+                top: -30px;
+            }
+        }
+    }
+
+    &.products__image--acabamentos,
+    &.products__image--colecoes {
+
+        @media (min-width: $screen-md-min) {
+            height: 268px
+            top: 0px
+            float: right;
+
+            img,
+            .hover-effect .bg {
+                left: 25px;
+                top: -30px;
+            }
+
+            h2 {
+                background-color: #fff;
+                color: $brand-secondary;
+                font-family: $font-oswald;
+                font-size: 30px;
+                font-weight: 300;
+                padding: 12px
+                position: absolute
+                text-align: center
+                text-transform: uppercase;
+                width: 260px
+                z-index: 1
+            }
+        }
+
+        @media (min-width: $screen-lg-min) {
+            float: left;
+            // max-width: 500px;
+        }
+    }
+
+    &.products__image--colecoes {
+        @media (min-width: $screen-md-min) {
+            height: 190px
+        }
+    }
+}
+
+.products__content {
+
+    &.products__content--ambiente,
+    &.products__content--diferenciais,
+    &.products__content--acabamentos,
+    &.products__content--colecoes {
+        float: left;
+    }
+
+    @media (min-width: $screen-md-min) {
+
+        &.products__content--ambiente {
+            position: absolute;
+            top: 340px;
+            left: 60px;
+            width: 25%;
+            float: none;
+
+            h2, p {
+                padding: 0 0 0 25px;
+            }
+        }
+
+        &.products__content--diferenciais {
+            position: absolute;
+            top: 340px;
+            left: 60px;
+            // width: 50%;
+            float: none;
+
+            h2, p {
+                padding: 0 0 0 25px;
+            }
+        }
+
+        &.products__content--acabamentos,
+        &.products__content--colecoes {
+            max-width: 500px;
+            float: right;
+            margin-top: 22px
+            position: relative
+
+            h2, p {
+                // padding: 0 0 0 25px;
+            }
+
+            p {
+                text-align: right;
+            }
+        }
+    }
+
+    @media (min-width: $screen-lg-min) {
+        &.products__content--acabamentos,
+        &.products__content--colecoes {
+            float: left;
+        }
+    }
+}
+
+.products__title {
+
+    h2 {
+        color: $brand-secondary;
+        font-family: $font-oswald;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 20px
+        margin-top: 34px
+        text-transform: uppercase;
+    }
+
+    span {
+        background-color: $brand-secondary;
+        display: block;
+        position: absolute;
+        width: 3px;
+    }
+
+    &.products__title--ambiente {
+        span {
+            left: 0;
+            top: -30px;
+            height: 253px;
+        }
+    }
+
+    &.products__title--diferenciais {
+        span {
+            left: 0;
+            top: -70px;
+            height: 253px;
+        }
+    }
+
+    &.products__title--acabamentos,
+    &.products__title--colecoes {
+        span {
+            top: -115px;
+            height: 173px;
+            right: -13px;
+            @media (min-width: $screen-lg-min) {
+                right: -55px;
+            }
+        }
+    }
+
+    // &.products__title--colecoes {
+    //     span {
+    //         top: -115px;
+    //         height: 173px;
+    //         right: 0;
+    //         @media (min-width: $screen-lg-min) {
+    //             right: 0;
+    //         }
+    //     }
+    // }
+}

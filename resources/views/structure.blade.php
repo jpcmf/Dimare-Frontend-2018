@@ -23,56 +23,76 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#" title="Dimare">
+                        <a class="navbar-brand" href="{{ url('/') }}" title="Dimare">
                             <img src="{{asset('img/dimare-logo@2x.png')}}" alt="">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Empresa</a></li>
+                            <li><a href="{{ url('/empresa') }}">Empresa</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produtos</a>
+                                <a href="{{ url('/produtos') }}" class="dropdown-toggle" data-toggle="dropdown">Produtos</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">AMBIENTES</a></li>
-                                    <li><a href="#">DIFERENCIAIS</a></li>
-                                    <li><a href="#">ACABAMENTOS</a></li>
-                                    <li><a href="#">COLEÇÕES</a></li>
+                                    <li><a href="{{ url('/produtos/ambientes') }}">AMBIENTES</a></li>
+                                    <li><a href="{{ url('/produtos/diferenciais') }}">DIFERENCIAIS</a></li>
+                                    <li><a href="{{ url('/produtos/acabamentos') }}">ACABAMENTOS</a></li>
+                                    <li><a href="{{ url('/produtos/colecoes') }}">COLEÇÕES</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Onde comprar</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="{{ url('/onde-comprar') }}">Onde comprar</a></li>
+                            <li><a href="{{ url('/blog') }}">Blog</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contato</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">FALE CONOSCO</a></li>
-                                    <li><a href="#">SEJA UM LOJISTA</a></li>
-                                    <li><a href="#">ACOMPANHE SEU PEDIDO</a></li>
+                                    <li><a href="{{ url('/fale-conosco') }}">FALE CONOSCO</a></li>
+                                    <li><a href="{{ url('/seja-um-lojista') }}">SEJA UM LOJISTA</a></li>
+                                    <li><a href="{{ url('/acompanhe-seu-pedido') }}">ACOMPANHE SEU PEDIDO</a></li>
                                 </ul>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Área restrita</a></li>
+                            <li><a href="{{ url('/') }}">Área restrita</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header> <!-- end / header -->
-        <div class="container-">
+        <div class="container-fluid">
             @yield('content')
         </div>
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-3">
-                        <a href="">EMPRESA</a>
-                        <a href="">ONDE COMPRAR</a>
-                        <a href="">BLOG</a>
-                        <a href="">ÁREA RESTRITA</a>
+                        <span><a class="footer__link" href="{{ url('/empresa') }}">EMPRESA</a></span>
+                        <span><a class="footer__link" href="{{ url('/onde-comprar') }}">ONDE COMPRAR</a></span>
+                        <span><a class="footer__link" href="{{ url('/blog') }}">BLOG</a></span>
+                        <span><a class="footer__link" href="{{ url('/empresa') }}">ÁREA RESTRITA</a></span>
                     </div>
-                    <div class="col-xs-12 col-md-3"></div>
-                    <div class="col-xs-12 col-md-3"></div>
-                    <div class="col-xs-12 col-md-3"></div>
+                    <div class="col-xs-12 col-md-3">
+                        <h3>PRODUTOS</h3>
+                        <span><a class="footer__link footer__link--white" href="{{ url('/produtos/ambientes') }}">AMBIENTES</a></span>
+                        <span><a class="footer__link footer__link--white" href="{{ url('/produtos/diferenciais') }}">DIFERENCIAIS</a></span>
+                        <span><a class="footer__link footer__link--white" href="{{ url('/produtos/acabamentos') }}">ACABAMENTOS</a></span>
+                        <span><a class="footer__link footer__link--white" href="{{ url('/produtos/colecoes') }}">COLEÇÕES</a></span>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <h3>CONTATO</h3>
+                        <span><a class="footer__link footer__link--white" href="{{ url('/fale-conosco') }}">FALE CONOSCO</a></span>
+                        <span><a class="footer__link footer__link--white" href="{{ url('/seja-um-lojista') }}">SEJA UM LOJISTA</a></span>
+                        <span><a class="footer__link footer__link--white" href="{{ url('/acompanhe-seu-pedido') }}">ACOMPANHE SEU PEDIDO</a></span>
+                    </div>
+                    <div class="col-xs-12 col-md-3 footer__logo">
+                        <img class="" src="{{asset('img/logo-dimare-rodape@2x.png')}}" alt="Dimare">
+                        <ul class="list-inline footer__social">
+                            <li><a href="https://www.instagram.com/dimare.fabrica"><img src="{{asset('img/instagram@2x.png')}}" alt="Instagram"></a></li>
+                            <li><a href="https://www.facebook.com/dimare.fabrica"><img src="{{asset('img/facebook@2x.png')}}" alt="Facebook"></a></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <div class="footer__copy text-center">
+                <p>© Copyright - Todos os direitos reservados - Dimare 2018 • Política de Privacidade • Desenvolvido por Agência Cupola</p>
             </div>
         </footer>
 

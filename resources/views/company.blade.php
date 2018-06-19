@@ -9,7 +9,7 @@
                 <div class="col-xs-12">
                     <h2>A DIMARE</h2>
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="{{ url('/') }}">Home</a></li>
                         <li>SOBRE NÓS</li>
                     </ul>
                 </div>
@@ -113,6 +113,7 @@
                 </div>
                 <div class="col-xs-12">
                     <div class="social__carousel">
+                        <span class="bg-firula hidden-xs hidden-sm"></span>
                         <div id="socialCarousel" class="carousel slide carousel-fade" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#socialCarousel" data-slide-to="0" class="active"></li>
@@ -124,21 +125,21 @@
                                 <div class="item active">
                                     <img src="{{asset('/img/img-social1.png')}}" alt="">
                                     <div class="carousel-caption">
-            							<p>Brinquedoteca - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
+            							<p>Brinquedoteca1 - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
             						</div>
                                 </div>
 
                                 <div class="item">
                                     <img src="{{asset('/img/img-social1.png')}}" alt="">
                                     <div class="carousel-caption">
-            							<p>Brinquedoteca - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
+            							<p>Brinquedoteca2 - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
             						</div>
                                 </div>
 
                                 <div class="item">
                                     <img src="{{asset('/img/img-social1.png')}}" alt="">
                                     <div class="carousel-caption">
-            							<p>Brinquedoteca - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
+            							<p>Brinquedoteca3 - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
             						</div>
                                 </div>
                             </div>
