@@ -7066,6 +7066,27 @@ footer h3 {
 .top .breadcrumb > li + li:before {
   color: #fff;
 }
+.top__bottom {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 27px;
+  font-weight: 200;
+  position: relative;
+}
+.top__bottom span.txt {
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+  top: 25px;
+}
+.top__bottom span.bg {
+  background-color: rgba(0,0,0,0.67);
+  display: block;
+  height: 73px;
+  max-width: 65%;
+  position: relative;
+  top: -22px;
+}
 .welcome {
   padding: 31px 0 31px 0;
 }
@@ -7739,6 +7760,102 @@ footer h3 {
     right: -55px;
   }
 }
+.ambients__filter {
+  background: url("/img/dots-background.png") no-repeat center center;
+  height: 135px;
+  padding-top: 60px;
+}
+.select {
+  background: url("/img/select-arrow.png") no-repeat right #fff;
+  border: 1px solid #acacac;
+  height: 34px;
+  margin: 0 auto;
+  max-width: 320px;
+  overflow: hidden;
+}
+.select select {
+  -webkit-appearance: none;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  font-weight: 500;
+  height: 34px;
+  line-height: 1;
+  padding: 5px 10px;
+}
+.ambients__content {
+  margin-top: 26px;
+}
+.ambients__title {
+  margin-bottom: 30px;
+  padding: 0 25px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .ambients__title {
+    left: 40px;
+  }
+}
+.ambients__title h2 {
+  color: #c4a480;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.ambients__title span {
+  background-color: #c4a480;
+  display: block;
+  height: 149px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 3px;
+}
+.ambients__title p {
+  max-width: 705px;
+}
+.ambients__gallery {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr;
+  max-width: 300px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .ambients__gallery {
+    grid-template-columns: 1fr 1fr;
+    max-width: 640px;
+  }
+}
+@media (min-width: 992px) {
+  .ambients__gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: inherit;
+    max-width: 960px;
+  }
+}
+.ambients__gallery .hover-effect {
+  width: 299px;
+}
+.ambients__gallery .bg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.ambients__gallery .bg:hover {
+  background-color: rgba(0,0,0,0.67);
+  background-image: url("/img/icon-lupa.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.ambients__buttons {
+  margin-top: 30px;
+}
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -7774,4 +7891,18 @@ a:hover {
 }
 .hover-effect:hover .bg {
   opacity: 1;
+}
+.modal .close {
+  color: #fff;
+  font-size: 67px;
+  opacity: 1;
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+}
+.modal-content {
+  border-radius: 0;
+}
+.modal-body {
+  padding: 0;
 }

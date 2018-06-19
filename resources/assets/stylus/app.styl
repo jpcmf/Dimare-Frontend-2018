@@ -20,6 +20,7 @@ $icon-font-path = "~bootstrap-styl/fonts/"
 @import 'sections/home.styl';
 @import 'sections/company.styl';
 @import 'sections/products.styl';
+@import 'sections/ambients.styl';
 
 // Geral
 html {
@@ -63,4 +64,21 @@ a:hover {
             opacity: 1;
         }
     }
+}
+
+.modal .close {
+    color: #fff;
+    font-size: 67px;
+    opacity: 1;
+    position absolute;
+    right 20px
+    z-index 1;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-body {
+    padding 0
 }

@@ -55,6 +55,12 @@ $(function () {
     $(window).resize(function () {
         dropdownClickable();
     });
+
+    $('.pop').on('click', function (e) {
+        e.preventDefault();
+        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+        $('#imagemodal').modal('show');
+    });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 

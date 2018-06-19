@@ -1,0 +1,111 @@
+.ambients {
+
+}
+
+.ambients__filter {
+    background: url('/img/dots-background.png') no-repeat center center;
+    height 135px
+    padding-top 60px
+}
+
+.select {
+    background: url(/img/select-arrow.png) no-repeat right #fff;
+    border: 1px solid $select-border-color
+    height: 34px;
+    margin: 0 auto;
+    max-width: 320px
+    overflow: hidden;
+
+    select {
+        -webkit-appearance: none;
+        // width: 268px;
+        background: transparent;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        font-size: 14px;
+        font-weight: 500;
+        height: 34px;
+        line-height: 1;
+        padding: 5px 10px;
+    }
+}
+
+.ambients__content {
+    margin-top 26px
+}
+
+.ambients__title {
+    margin-bottom: 30px
+    padding: 0 25px;
+    position: relative;
+    z-index: 1
+
+    @media (min-width: $screen-sm-min) {
+        left: 40px
+    }
+
+    h2 {
+        color: $brand-primary;
+        font-family: $font-oswald;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    span {
+        background-color: $brand-primary;
+        display: block;
+        height: 149px;
+        left: 0;
+        position: absolute;
+        top: 10px;
+        width: 3px;
+    }
+
+    p {
+        max-width: 705px;
+    }
+}
+
+.ambients__gallery {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+
+    @media (min-width: $screen-sm-min) {
+        grid-template-columns: 1fr 1fr;
+        max-width: 640px;
+
+    }
+
+    @media (min-width: $screen-md-min) {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: inherit;
+        max-width: 960px;
+    }
+
+    .hover-effect {
+        width 299px
+    }
+
+    .bg {
+        img {
+            object-fit: cover;
+            width: 100%
+        }
+    }
+
+    .bg:hover {
+        background-color: rgba(0,0,0,0.67);
+        background-image: url('/img/icon-lupa.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+.ambients__buttons {
+    margin-top: 30px
+}
