@@ -38,11 +38,8 @@
 
 .products__image {
     background-color: $bg-img-firula;
-    // max-width: 430px;
-    // height: 500px
     position: relative
     float: left;
-    // width: 50%
 
     img {
         position: relative;
@@ -53,7 +50,6 @@
         @media (min-width: $screen-md-min) {
             height: 391px
             top: -40px
-            // max-width: 940px;
 
             img,
             .hover-effect .bg {
@@ -68,7 +64,6 @@
         @media (min-width: $screen-md-min) {
             height: 391px
             top: -40px
-            // max-width: 770px;
 
             img,
             .hover-effect .bg {
@@ -109,7 +104,6 @@
 
         @media (min-width: $screen-lg-min) {
             float: left;
-            // max-width: 500px;
         }
     }
 
@@ -147,7 +141,6 @@
             position: absolute;
             top: 340px;
             left: 60px;
-            // width: 50%;
             float: none;
 
             h2, p {
@@ -161,10 +154,6 @@
             float: right;
             margin-top: 22px
             position: relative
-
-            h2, p {
-                // padding: 0 0 0 25px;
-            }
 
             p {
                 text-align: right;
@@ -226,15 +215,125 @@
             }
         }
     }
+}
 
-    // &.products__title--colecoes {
-    //     span {
-    //         top: -115px;
-    //         height: 173px;
-    //         right: 0;
-    //         @media (min-width: $screen-lg-min) {
-    //             right: 0;
-    //         }
-    //     }
-    // }
+.differential {
+    position: relative
+    margin-top: 60px
+}
+
+.differential__content {
+
+    @media (min-width: $screen-md-min) {
+        position: absolute
+        top: 0
+
+        span {
+            border: solid 3px $brand-secondary;
+            display: block;
+            height 134px
+            left: -510px
+            width: 816px;
+            position: absolute
+            top: 40%
+            z-index: -1
+        }
+
+        p {
+            background-color: $bg-img-firula;
+            margin-left: -490px;
+            margin-top: 140px;
+            padding: 40px 80px;
+            width: 620px;
+        }
+    }
+}
+
+.differential__image {
+
+    @media (max-width: $screen-sm-min) {
+        margin: 30px auto 20px;
+    }
+}
+
+.differential__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+
+    @media (min-width: $screen-sm-min) {
+        height: 250px;
+    }
+
+    .differential__center {
+        max-width: 400px
+    }
+
+    h3 {
+        color: $brand-primary;
+        font-size: 18px;
+        font-family: $font-oswald;
+        font-weight: 400;
+    }
+}
+
+.microban {
+    background: $brand-secondary url('/img/dots-background-red.png') no-repeat center center;
+    min-height: 348px;
+    padding: 64px 0 40px;
+
+    p {
+        color: #fff;
+        margin-top 37px
+    }
+}
+
+.microban__title {
+    h2, h3 {
+        color: #fff;
+        font-family: $font-oswald;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        margin 0
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom 10px
+    }
+
+    span {
+        border-bottom: solid 3px #c4a480;
+        width: 128px;
+        display: block;
+    }
+}
+
+.microban__list {
+    list-style: none;
+    padding 0
+    width: 80%;
+    margin-top 20px
+
+    @media (min-width: $screen-md-min) {
+        margin-top 0
+    }
+
+    li {
+        background: url('/img/seta-direita-black.png') no-repeat 0 4px;
+        margin-bottom 20px
+        padding-left 15px
+    }
+
+    p {
+        margin 0
+    }
 }

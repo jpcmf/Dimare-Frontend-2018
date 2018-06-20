@@ -4706,11 +4706,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #333;
+  border-color: transparent;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #333;
+  background-color: transparent;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -6960,6 +6960,10 @@ button.close {
   background-color: #c4a480;
   color: #000;
 }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 .navbar {
   z-index: 1;
 }
@@ -7784,6 +7788,118 @@ footer h3 {
     right: -55px;
   }
 }
+.differential {
+  position: relative;
+  margin-top: 60px;
+}
+@media (min-width: 992px) {
+  .differential__content {
+    position: absolute;
+    top: 0;
+  }
+  .differential__content span {
+    border: solid 3px #841d2b;
+    display: block;
+    height: 134px;
+    left: -510px;
+    width: 816px;
+    position: absolute;
+    top: 40%;
+    z-index: -1;
+  }
+  .differential__content p {
+    background-color: #e9e9e9;
+    margin-left: -490px;
+    margin-top: 140px;
+    padding: 40px 80px;
+    width: 620px;
+  }
+}
+@media (max-width: 768px) {
+  .differential__image {
+    margin: 30px auto 20px;
+  }
+}
+.differential__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+}
+@media (min-width: 768px) {
+  .differential__icons {
+    height: 250px;
+  }
+}
+.differential__icons .differential__center {
+  max-width: 400px;
+}
+.differential__icons h3 {
+  color: #c4a480;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+.microban {
+  background: #841d2b url("/img/dots-background-red.png") no-repeat center center;
+  min-height: 348px;
+  padding: 64px 0 40px;
+}
+.microban p {
+  color: #fff;
+  margin-top: 37px;
+}
+.microban__title h2,
+.microban__title h3 {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  margin: 0;
+}
+.microban__title h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.microban__title h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.microban__title span {
+  border-bottom: solid 3px #c4a480;
+  width: 128px;
+  display: block;
+}
+.microban__list {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .microban__list {
+    margin-top: 0;
+  }
+}
+.microban__list li {
+  background: url("/img/seta-direita-black.png") no-repeat 0 4px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+.microban__list p {
+  margin: 0;
+}
 .ambients__filter {
   background: url("/img/dots-background.png") no-repeat center center;
   height: 135px;
@@ -7980,10 +8096,8 @@ footer h3 {
   max-width: none;
 }
 .catalog__form form .select select {
-  padding: 5px 10px;
-}
-.catalog__form form .select select option {
   color: #fff;
+  padding: 5px 10px;
 }
 .catalog__form form .btn {
   margin: 0 15px;
