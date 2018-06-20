@@ -106,13 +106,13 @@
                 </div>
             </div>
         </div>
-        <div class="ambients__colection">
+        <div class="ambients__collection">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="ambients__colection-image">
+                        <div class="ambients__collection-image">
                             <img class="img-responsive" src="{{asset('/img/img-colecao-dimare.png')}}" alt="">
-                            <div class="ambients__colection-title">
+                            <div class="ambients__collection-title">
                                 <h2>COLEÇÕES DIMARE</h2>
                                 <a class="btn btn-solid btn-solid--black" href="">VER TODAS</a>
                             </div>

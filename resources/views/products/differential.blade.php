@@ -79,7 +79,6 @@
                         Os painéis BP Duratex utilizados pela Dimare têm incorporado em sua fabricação a tecnologia Microban®, líder mundial em proteção antimicrobiana e 100% focada em segurança e durabilidade. <br><br>
                         Conheça outras vantagens:
                     </p>
-
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <ul class="microban__list">
