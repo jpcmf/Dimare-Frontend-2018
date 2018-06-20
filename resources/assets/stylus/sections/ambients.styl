@@ -1,11 +1,11 @@
-.ambients {
-
-}
-
 .ambients__filter {
     background: url('/img/dots-background.png') no-repeat center center;
     height 135px
-    padding-top 60px
+    padding-top 30px
+
+    @media (min-width: $screen-sm-min) {
+        padding-top 60px
+    }
 }
 
 .select {
@@ -18,7 +18,6 @@
 
     select {
         -webkit-appearance: none;
-        // width: 268px;
         background: transparent;
         border-radius: 0;
         border: 0;
@@ -41,7 +40,7 @@
     position: relative;
     z-index: 1
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
         left: 40px
     }
 
@@ -78,7 +77,6 @@
     @media (min-width: $screen-sm-min) {
         grid-template-columns: 1fr 1fr;
         max-width: 640px;
-
     }
 
     @media (min-width: $screen-md-min) {
@@ -108,4 +106,63 @@
 
 .ambients__buttons {
     margin-top: 30px
+    max-width: 960px;
+
+    .btn {
+        padding: 2px 12px;
+    }
+}
+
+.ambients__colection {
+    margin-top: 40px
+}
+
+.ambients__colection-image {
+    position: relative
+    max-width: 940px;
+
+    span {
+        background-color: $bg-img-firula;
+        height: 385px
+        left 0;
+        max-width: 770px;
+        position: absolute
+        top 0;
+        width: 100%
+        z-index: -1;
+    }
+
+    img {
+        @media (min-width: $screen-md-min) {
+            padding: 30px
+        }
+    }
+}
+
+.ambients__colection-title {
+    position: absolute;
+    right: -1px
+    top: 2%;
+
+    @media (min-width: $screen-sm-min) {
+        top: 37%
+    }
+
+    @media (min-width: $screen-md-min) {
+        right: 29px
+    }
+
+    h2 {
+        background-color: #fff;
+        color: $brand-secondary;
+        font-family: $font-oswald;
+        font-weight: 300;
+        font-size: 27px;
+        padding: 16px 19px;
+        width: 280px;
+
+        @media (min-width: $screen-md-min) {
+            width: 380px;
+        }
+    }
 }

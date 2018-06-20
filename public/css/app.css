@@ -2665,10 +2665,10 @@ output {
   font-size: 14px;
   line-height: 1.428571429;
   color: #555;
-  background-color: #fff;
+  background-color: transparent;
   background-image: none;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
           box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
   -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
@@ -4033,7 +4033,7 @@ tbody.collapse.in {
   text-align: center;
   background-color: #eee;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0;
 }
 .input-group-addon.input-sm {
   padding: 5px 10px;
@@ -6933,8 +6933,32 @@ button.close {
   border-radius: 0;
   text-transform: uppercase;
 }
-.btn-outline:hover {
+.btn-outline:hover,
+.btn-outline:focus {
   color: #c4a480;
+}
+.btn-outline:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.btn-solid {
+  border-radius: 0;
+  color: #fff;
+}
+.btn-solid:hover,
+.btn-solid:focus {
+  color: #fff;
+}
+.btn-solid:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.btn-solid.btn-solid--black {
+  background-color: #000;
+}
+.btn-solid.btn-solid--marron {
+  background-color: #c4a480;
+  color: #000;
 }
 .navbar {
   z-index: 1;
@@ -7763,7 +7787,12 @@ footer h3 {
 .ambients__filter {
   background: url("/img/dots-background.png") no-repeat center center;
   height: 135px;
-  padding-top: 60px;
+  padding-top: 30px;
+}
+@media (min-width: 768px) {
+  .ambients__filter {
+    padding-top: 60px;
+  }
 }
 .select {
   background: url("/img/select-arrow.png") no-repeat right #fff;
@@ -7795,7 +7824,7 @@ footer h3 {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .ambients__title {
     left: 40px;
   }
@@ -7855,6 +7884,126 @@ footer h3 {
 }
 .ambients__buttons {
   margin-top: 30px;
+  max-width: 960px;
+}
+.ambients__buttons .btn {
+  padding: 2px 12px;
+}
+.ambients__colection {
+  margin-top: 40px;
+}
+.ambients__colection-image {
+  position: relative;
+  max-width: 940px;
+}
+.ambients__colection-image span {
+  background-color: #e9e9e9;
+  height: 385px;
+  left: 0;
+  max-width: 770px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media (min-width: 992px) {
+  .ambients__colection-image img {
+    padding: 30px;
+  }
+}
+.ambients__colection-title {
+  position: absolute;
+  right: -1px;
+  top: 2%;
+}
+@media (min-width: 768px) {
+  .ambients__colection-title {
+    top: 37%;
+  }
+}
+@media (min-width: 992px) {
+  .ambients__colection-title {
+    right: 29px;
+  }
+}
+.ambients__colection-title h2 {
+  background-color: #fff;
+  color: #841d2b;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 27px;
+  padding: 16px 19px;
+  width: 280px;
+}
+@media (min-width: 992px) {
+  .ambients__colection-title h2 {
+    width: 380px;
+  }
+}
+.catalog {
+  margin-top: 47px;
+}
+.catalog__image {
+  background: url("/img/img-catalog.png") no-repeat center center;
+  height: 390px;
+  max-width: 940px;
+}
+.catalog__form {
+  background: url("/img/dots-background-black3.png") no-repeat center center;
+  float: right;
+  height: 390px;
+  max-width: 573px;
+}
+.catalog__form form {
+  padding: 0 40px;
+}
+.catalog__form form .form-control {
+  height: auto;
+  padding: 2.5px 12px;
+}
+.catalog__form form .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+.catalog__form form .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+.catalog__form form .form-control::-ms-input-placeholder {
+  color: #fff;
+}
+.catalog__form form .form-control::placeholder {
+  color: #fff;
+}
+.catalog__form form .select {
+  background: url("/img/select-arrow2.png") no-repeat right;
+  border-right: 0;
+  height: 27px;
+  max-width: none;
+}
+.catalog__form form .select select {
+  padding: 5px 10px;
+}
+.catalog__form form .select select option {
+  color: #fff;
+}
+.catalog__form form .btn {
+  margin: 0 15px;
+  padding: 3px 12px;
+}
+.catalog__title h2 {
+  border-bottom: solid 3px #c4a480;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  left: -40px;
+  padding-bottom: 10px;
+  position: relative;
+  text-align: right;
+  width: 193px;
+}
+.catalog__title p {
+  color: #fff;
+  padding: 0 40px;
 }
 html {
   font-size: 100%;

@@ -6,7 +6,35 @@
     border-radius: 0;
     text-transform: uppercase;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $button-text-color;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-solid {
+    border-radius: 0;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &.btn-solid--black {
+        background-color: #000;
+    }
+
+    &.btn-solid--marron {
+        background-color: $brand-primary;
+        color: #000;
     }
 }
