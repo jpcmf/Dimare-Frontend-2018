@@ -34,7 +34,7 @@
                     </div>
                     <div class="collections__items">
                         <div class="collections__image">
-                            <a href="" class="hover-effect">
+                            <a href="{{ url ('/produtos/colecoes/laca-slim') }}" class="hover-effect">
                                 <img class="img-responsive" src="{{asset('/img/img-colecao1.png')}}" alt="">
                                 <span class="bg">
                                     <span class="btn btn-outline">VER MAIS</span>
@@ -44,7 +44,7 @@
                             <span class="bg-firula hidden-xs"></span>
                         </div>
                         <div class="collections__image">
-                            <a href="" class="hover-effect">
+                            <a href="{{ url ('/produtos/colecoes/laca-slim') }}" class="hover-effect">
                                 <img class="img-responsive" src="{{asset('/img/img-colecao2.png')}}" alt="">
                                 <span class="bg">
                                     <span class="btn btn-outline">VER MAIS</span>
@@ -54,7 +54,7 @@
                             <span class="bg-firula hidden-xs"></span>
                         </div>
                         <div class="collections__image">
-                            <a href="" class="hover-effect">
+                            <a href="{{ url ('/produtos/colecoes/laca-slim') }}" class="hover-effect">
                                 <img class="img-responsive" src="{{asset('/img/img-colecao3.png')}}" alt="">
                                 <span class="bg">
                                     <span class="btn btn-outline">VER MAIS</span>
@@ -64,7 +64,7 @@
                             <span class="bg-firula hidden-xs"></span>
                         </div>
                         <div class="collections__image">
-                            <a href="" class="hover-effect">
+                            <a href="{{ url ('/produtos/colecoes/laca-slim') }}" class="hover-effect">
                                 <img class="img-responsive" src="{{asset('/img/img-colecao4.png')}}" alt="">
                                 <span class="bg">
                                     <span class="btn btn-outline">VER MAIS</span>
