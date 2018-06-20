@@ -337,3 +337,61 @@
         margin 0
     }
 }
+
+.acabamentos {
+    margin-top 60px;
+}
+
+.acabamentos__content {
+    form {
+        margin-top 50px
+
+        .form-control {
+            height: auto;
+            padding: 2.5px 12px;
+            border-color: $select-border-color;
+            box-shadow: none;
+
+            &::placeholder {
+                color: #737373;
+            }
+        }
+
+        .select {
+            background: url(/img/select-arrow2.png) no-repeat right;
+            border-right: 0;
+            height: 27px
+            max-width: none;
+
+            select {
+                color: #737373;
+                padding: 5px 10px;
+            }
+        }
+
+        .btn {
+            margin: 10px 15px 0 15px
+            padding: 3px 12px;
+        }
+    }
+}
+
+.acabamentos__image {
+    margin 30px auto 0;
+    max-width: 380px;
+
+    @media (min-width: $screen-md-min) {
+        background-color: $bg-img-firula;
+        max-width: 443px;
+    }
+
+    img {
+        width 100%
+        @media (min-width: $screen-md-min) {
+            position relative
+            padding 0 30px
+            margin-top -30px
+            width auto
+        }
+    }
+}
