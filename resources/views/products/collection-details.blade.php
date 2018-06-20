@@ -58,10 +58,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="ambients__title">
-                            <h2>COZINHAS</h2>
-                            <p>Com design moderno e arrojado, os móveis planejados para cozinha da Dimare oferecem beleza, elegância e durabilidade para este espaço de convivência.</p>
-                            <span></span>
+                        <div class="ambients__title ambients__title--collection">
+                            <p>
+                                A linha Laca Slim da Dimare é mais uma inovação que oferece sofisticação e versatilidade para ambientes planejados. <br><br>
+                                Produzida com tecnologia e qualidade europeia, apresenta excelente acabamento, além de padrões de cores modernos e vibrantes, permitindo combinações com todos os demais padrões da linha Dimare. <br><br>
+                                Saiba mais sobre essa matéria-prima exclusiva:
+                            </p>
+                        </div>
+                        <div class="ambients__player">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.youtube.com/embed/9B6G_ygeAp0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div class="ambients__gallery">
                             <a href="#" class="pop hover-effect">
@@ -103,22 +110,6 @@
                         </div>
                         <div class="ambients__buttons text-center">
                             <a href="" class="btn btn-outline">Ver mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ambients__collection">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="ambients__collection-image">
-                            <img class="img-responsive" src="{{asset('/img/img-colecao-dimare.png')}}" alt="">
-                            <div class="ambients__collection-title">
-                                <h2>COLEÇÕES DIMARE</h2>
-                                <a class="btn btn-solid btn-solid--black" href="">VER TODAS</a>
-                            </div>
-                            <span class="hidden-xs hidden-sm"></span>
                         </div>
                     </div>
                 </div>

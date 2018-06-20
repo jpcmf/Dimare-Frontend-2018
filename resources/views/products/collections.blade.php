@@ -78,7 +78,7 @@
             </div>
         </div>
     </section>
-    
+
     @component('components/catalog-form')
     @endcomponent
 @endsection
