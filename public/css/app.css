@@ -8357,6 +8357,9 @@ footer h3 {
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+.contact {
+  margin-top: 60px;
+}
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
