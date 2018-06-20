@@ -3,26 +3,12 @@
 @section('title', 'Diferenciais')
 
 @section('content')
-    <section class="top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2>DIFERENCIAIS</h2>
-                    <ul class="breadcrumb">
-                        <li><a href="{{ url('/') }}">Home</a></li>
-                        <li>PRODUTOS</li>
-                        <li>DIFERENCIAIS</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="top__bottom hidden-xs hidden-sm">
-            <div class="container">
-                <span class="txt">Diferenciais Dimare: soluções inteligentes para o viver bem</span>
-            </div>
-            <span class="bg"></span>
-        </div>
-    </section>
+
+    @component('components/header', ['title' => 'DIFERENCIAIS', 'subtitle' => 'Diferenciais Dimare: soluções inteligentes para o viver bem'])
+        <li>PRODUTOS</li>
+        <li>DIFERENCIAIS</li>
+    @endcomponent
+    
     <section class="differential">
         <div class="container">
             <div class="row">

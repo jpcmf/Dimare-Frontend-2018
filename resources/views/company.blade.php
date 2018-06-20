@@ -3,19 +3,11 @@
 @section('title', 'Empresa')
 
 @section('content')
-    <section class="top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2>A DIMARE</h2>
-                    <ul class="breadcrumb">
-                        <li><a href="{{ url('/') }}">Home</a></li>
-                        <li>SOBRE NÓS</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    @component('components/header', ['title' => 'A DIMARE'])
+        <li>SOBRE NÓS</li>
+    @endcomponent
+
     <section class="history">
         <div class="container">
             <div class="row">

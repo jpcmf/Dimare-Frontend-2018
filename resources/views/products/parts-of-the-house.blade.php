@@ -3,26 +3,12 @@
 @section('title', 'Ambientes')
 
 @section('content')
-    <section class="top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2>COZINHAS</h2>
-                    <ul class="breadcrumb">
-                        <li><a href="{{ url('/') }}">Home</a></li>
-                        <li>PRODUTOS</li>
-                        <li>COZINHAS</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="top__bottom hidden-xs hidden-sm">
-            <div class="container">
-                <span class="txt">Para cada ambiente planejado, uma solução Dimare</span>
-            </div>
-            <span class="bg"></span>
-        </div>
-    </section>
+
+    @component('components/header', ['title' => 'COZINHAS', 'subtitle' => 'Para cada ambiente planejado, uma solução Dimare'])
+        <li>PRODUTOS</li>
+        <li>COZINHAS</li>
+    @endcomponent
+
     <section class="ambients">
         <div class="ambients__filter">
             <div class="container">
