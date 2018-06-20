@@ -1,0 +1,99 @@
+.where-to-buy {
+    padding-top 60px;
+
+    @media (min-width: $screen-sm-min) {
+        background: url('/img/img-brasil.png') no-repeat 98% 10%;
+    }
+}
+
+.where-to-buy {
+    form {
+
+        .form-control {
+            border-color $select-border-color;
+            box-shadow: none;
+            height: auto;
+            padding: 2.5px 12px;
+
+            &::placeholder {
+                // color: #fff;
+            }
+        }
+
+        .select {
+            background: url(/img/select-arrow2.png) no-repeat right;
+            border-right: 0;
+            height: 27px
+            max-width: none;
+
+            select {
+                color: $input-color-placeholder;
+                padding: 5px 10px;
+            }
+        }
+
+        textarea {
+            height 184px!important
+        }
+
+        .btn {
+            padding 3px 12px
+        }
+    }
+}
+
+.where-to-buy__search {
+    form {
+        margin-top 40px;
+
+        .select {
+            background: url(/img/select-arrow3.png) no-repeat right;
+            border-color: $brand-secondary;
+        }
+    }
+}
+
+.where-to-buy__result {
+    text-align: center;
+    margin-top 55px
+
+    span {
+        display: block;
+    }
+
+    .name {
+        color: $brand-primary
+        font-family: $font-oswald;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 1.5px;
+        margin-bottom 20px;
+        text-transform: uppercase;
+    }
+
+    .phone,
+    .address,
+    .email {
+        font-size: 15px;
+    }
+
+    .firula {
+        background-color: $brand-secondary;
+        height: 3px;
+        margin 24px auto 0;
+        width: 128px;
+    }
+}
+
+.where-to-buy__title {
+    margin-top 110px
+
+    h2 {
+        color: $brand-primary
+        font-family: $font-oswald;
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+}

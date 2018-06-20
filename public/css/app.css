@@ -2683,14 +2683,14 @@ output {
           box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
 }
 .form-control::-moz-placeholder {
-  color: #999;
+  color: #737373;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #999;
+  color: #737373;
 }
 .form-control::-webkit-input-placeholder {
-  color: #999;
+  color: #737373;
 }
 .form-control::-ms-expand {
   border: 0;
@@ -7642,6 +7642,7 @@ footer h3 {
   .products__image.products__image--ambiente {
     height: 391px;
     top: -40px;
+    left: -25px;
   }
   .products__image.products__image--ambiente img,
   .products__image.products__image--ambiente .hover-effect .bg {
@@ -7653,6 +7654,7 @@ footer h3 {
   .products__image.products__image--diferenciais {
     height: 391px;
     top: -40px;
+    left: -25px;
   }
   .products__image.products__image--diferenciais img,
   .products__image.products__image--diferenciais .hover-effect .bg {
@@ -7710,7 +7712,7 @@ footer h3 {
   .products__content.products__content--ambiente {
     position: absolute;
     top: 340px;
-    left: 60px;
+    left: 35px;
     width: 25%;
     float: none;
   }
@@ -7721,7 +7723,7 @@ footer h3 {
   .products__content.products__content--diferenciais {
     position: absolute;
     top: 340px;
-    left: 60px;
+    left: 35px;
     float: none;
   }
   .products__content.products__content--diferenciais h2,
@@ -8044,7 +8046,7 @@ footer h3 {
   z-index: -1;
 }
 .ambients__filter {
-  background: url("/img/dots-background.png") no-repeat center center;
+  background: url("/img/dots-background.png") repeat-x center center;
   height: 135px;
   padding-top: 30px;
 }
@@ -8261,7 +8263,6 @@ footer h3 {
   padding: 5px 10px;
 }
 .catalog__form form .btn {
-  margin: 0 15px;
   padding: 3px 12px;
 }
 .catalog__title h2 {
@@ -8279,6 +8280,82 @@ footer h3 {
 .catalog__title p {
   color: #fff;
   padding: 0 40px;
+}
+.where-to-buy {
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  .where-to-buy {
+    background: url("/img/img-brasil.png") no-repeat 98% 10%;
+  }
+}
+.where-to-buy form .form-control {
+  border-color: #acacac;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: auto;
+  padding: 2.5px 12px;
+}
+.where-to-buy form .select {
+  background: url("/img/select-arrow2.png") no-repeat right;
+  border-right: 0;
+  height: 27px;
+  max-width: none;
+}
+.where-to-buy form .select select {
+  color: #737373;
+  padding: 5px 10px;
+}
+.where-to-buy form textarea {
+  height: 184px !important;
+}
+.where-to-buy form .btn {
+  padding: 3px 12px;
+}
+.where-to-buy__search form {
+  margin-top: 40px;
+}
+.where-to-buy__search form .select {
+  background: url("/img/select-arrow3.png") no-repeat right;
+  border-color: #841d2b;
+}
+.where-to-buy__result {
+  text-align: center;
+  margin-top: 55px;
+}
+.where-to-buy__result span {
+  display: block;
+}
+.where-to-buy__result .name {
+  color: #c4a480;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.where-to-buy__result .phone,
+.where-to-buy__result .address,
+.where-to-buy__result .email {
+  font-size: 15px;
+}
+.where-to-buy__result .firula {
+  background-color: #841d2b;
+  height: 3px;
+  margin: 24px auto 0;
+  width: 128px;
+}
+.where-to-buy__title {
+  margin-top: 110px;
+}
+.where-to-buy__title h2 {
+  color: #c4a480;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 html {
   font-size: 100%;

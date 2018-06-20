@@ -37,7 +37,9 @@
                                         </select>
                                     </div>
                                 </div>
-                                <a href="" class="btn btn-solid btn-solid--marron">DOWNLOAD</a>
+                                <div class="col-xs-12">
+                                    <a href="" class="btn btn-solid btn-solid--marron">DOWNLOAD</a>
+                                </div>
                             </div>
                         </form>
                     </div>
