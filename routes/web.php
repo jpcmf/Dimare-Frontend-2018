@@ -59,7 +59,3 @@ Route::get('/blog/{post_url}', function () {
 Route::get('/blog/{post_url}', function () {
     return view('blog/post');
 });
-
-Route::get('/ambients/cozinhas', function () {
-    return view('ambients/cozinhas');
-});

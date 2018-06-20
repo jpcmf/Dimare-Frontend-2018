@@ -68,27 +68,27 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <div class="welcome__ambientes">
-                                    <a href="{{url('ambients/cozinhas')}}" class="thumb thumb-dorm">
+                                    <a href="{{url('produtos/ambientes')}}" class="thumb thumb-dorm">
                                         <span class="txt">DORMITÓRIOS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="{{url('ambients/cozinhas')}}" class="thumb thumb-closet">
+                                    <a href="{{url('produtos/ambientes')}}" class="thumb thumb-closet">
                                         <span class="txt">CLOSETS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="{{url('ambients/cozinhas')}}" class="thumb thumb-coz">
+                                    <a href="{{url('produtos/ambientes')}}" class="thumb thumb-coz">
                                         <span class="txt">COZINHAS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="{{url('ambients/cozinhas')}}" class="thumb thumb-corp">
+                                    <a href="{{url('produtos/ambientes')}}" class="thumb thumb-corp">
                                         <span class="txt">CORPORATIVOS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="{{url('ambients/cozinhas')}}" class="thumb thumb-home">
+                                    <a href="{{url('produtos/ambientes')}}" class="thumb thumb-home">
                                         <span class="txt">HOME THEATERS</span>
                                         <span class="bg"></span>
                                     </a>
-                                    <a href="{{url('ambients/cozinhas')}}" class="thumb thumb-ban">
+                                    <a href="{{url('produtos/ambientes')}}" class="thumb thumb-ban">
                                         <span class="txt">BANHEIROS</span>
                                         <span class="bg"></span>
                                     </a>
