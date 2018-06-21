@@ -1,4 +1,67 @@
+.form-control {
+    border-color $select-border-color;
+    box-shadow: none;
+    height: auto;
+    padding: 2.5px 12px;
+
+    &::placeholder {
+        // color: #fff;
+    }
+}
+
+textarea.form-control {
+    height 194px
+}
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+
+.select {
+    border: 1px solid $select-border-color
+    margin: 0 auto;
+    overflow: hidden;
+
+    select {
+        -webkit-appearance: none;
+        background: transparent;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        font-size: 14px;
+        font-weight: 500;
+        // height: 34px;
+        line-height: 1;
+        padding: 5px 10px;
+    }
+
+    &.select--ambients {
+        background: url(/img/select-arrow.png) no-repeat right #fff;
+        height: 34px;
+        max-width: 320px
+    }
+
+    &.select--catalog,
+    &.select--acabamento,
+    &.select--contato,
+    &.select--where-to-buy {
+        background: url(/img/select-arrow2.png) no-repeat right;
+        border-right: 0;
+        height: 27px;
+        max-width: none;
+
+        select {
+            color: #fff;
+            padding: 5px 10px !important;
+        }
+    }
+
+    &.select--acabamento,
+    &.select--contato,
+    &.select--where-to-buy {
+        select {
+            color: #737373;
+        }
+    }
 }

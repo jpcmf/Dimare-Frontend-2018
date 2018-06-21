@@ -31,7 +31,7 @@
                                     <input type="text" class="form-control" placeholder="E-MAIL">
                                 </div>
                                 <div class="col-xs-12 col-sm-6 form-group">
-                                    <div class="select">
+                                    <div class="select select--acabamento">
                                         <select class="form-control">
                                             <option>ESTADO</option>
                                             <option>2</option>
@@ -40,7 +40,7 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 form-group">
-                                    <div class="select">
+                                    <div class="select select--acabamento">
                                         <select class="form-control">
                                             <option>CIDADE</option>
                                             <option>2</option>

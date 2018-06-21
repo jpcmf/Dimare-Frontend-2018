@@ -1,3 +1,70 @@
 .contact {
-    margin-top 60px
+    background: url(/img/dots-background.png) repeat center center;
+    padding-top 60px
+    min-height: 408px;
+    padding-bottom 50px
+
+    p {
+        margin-bottom 30px;
+    }
+
+    form {
+
+        .btn {
+            padding: 3px 12px;
+        }
+    }
+}
+
+.contact__address {
+    background-color: $brand-secondary;
+    min-height: 294px;
+
+    .embed-responsive-100x400px{
+        padding-bottom: 294px;
+    }
+
+    @media (min-width: $screen-md-min) {
+        min-height: 494px;
+
+        .embed-responsive-100x400px{
+            padding-bottom: 494px;
+        }
+    }
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    float:right;
+    justify-content: center;
+    padding 0 15px
+    width 100%
+
+    @media (min-width: $screen-md-min) {
+        max-width: 485px;
+        min-height: 494px;
+        padding 0
+    }
+}
+
+.contact__info {
+    margin 24px 0;
+
+    .title {
+        color: $brand-primary;
+        display: block;
+        font-family: $font-oswald;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 0.9px;
+        margin-bottom 10px
+    }
+
+    p, a {
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        margin 0
+    }
 }
