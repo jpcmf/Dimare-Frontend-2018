@@ -3,5 +3,9 @@
 @section('title', 'Blog post')
 
 @section('content')
-    <p>This is the content from blog/post page</p>
+
+    @component('components/header', ['title' => 'BLOG', 'subtitle' => 'Noticias, dicas e tendências do universo moveleiro'])
+        <li>BLOG</li>
+    @endcomponent
+
 @endsection

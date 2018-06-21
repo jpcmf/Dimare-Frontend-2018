@@ -50,12 +50,14 @@ $(function () {
             });
         }
     }
+
     dropdownClickable();
 
     $(window).resize(function () {
         dropdownClickable();
     });
 
+    // open images modal
     $('.pop').on('click', function (e) {
         e.preventDefault();
         $('.imagepreview').attr('src', $(this).find('img').attr('src'));

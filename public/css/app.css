@@ -3690,7 +3690,7 @@ tbody.collapse.in {
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: #fff;
+  background-color: rgba(0,0,0,0.75);
   border: 1px solid #ccc;
   border: 1px solid rgba(0,0,0,0.15);
   border-radius: 4px;
@@ -3714,14 +3714,14 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
-  color: #333;
+  color: #fff;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #262626;
-  background-color: #f5f5f5;
+  color: #c4a480;
+  background-color: transparent;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -7123,6 +7123,26 @@ select {
 }
 .navbar-nav.navbar-right > li > a:hover {
   color: #fff;
+}
+.dropdown-menu {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .dropdown-menu {
+    font-size: 16px;
+    top: 100px;
+    left: -30%;
+  }
+}
+@media (min-width: 992px) {
+  .dropdown-menu {
+    font-size: 18px;
+  }
+}
+.dropdown-menu > li > a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  padding: 10px 20px;
 }
 footer {
   background-color: #252525;
