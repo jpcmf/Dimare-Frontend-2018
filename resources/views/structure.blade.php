@@ -67,7 +67,7 @@
                         <span><a class="footer__link" href="{{ url('/empresa') }}">EMPRESA</a></span>
                         <span><a class="footer__link" href="{{ url('/onde-comprar') }}">ONDE COMPRAR</a></span>
                         <span><a class="footer__link" href="{{ url('/blog') }}">BLOG</a></span>
-                        <span><a class="footer__link" href="{{ url('/empresa') }}">ÁREA RESTRITA</a></span>
+                        <span><a class="footer__link" href="{{ url('/') }}">ÁREA RESTRITA</a></span>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <h3>PRODUTOS</h3>

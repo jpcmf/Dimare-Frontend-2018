@@ -1,3 +1,9 @@
+@media (max-width: $screen-xs-max) {
+    .navbar-inverse {
+        background-color: #000;
+    }
+}
+
 .navbar {
     z-index: 1;
 }
@@ -37,9 +43,9 @@
 }
 
 .dropdown-menu {
-    text-align: center;
 
     @media (min-width: $screen-sm-min) {
+        text-align: center;
         font-size: 16px;
         top 100px
         left -30%
@@ -50,8 +56,10 @@
     }
 }
 
-.dropdown-menu > li > a {
-    font-family: $font-oswald;
-    font-weight: 200;
-    padding 10px 20px;
+@media (min-width: $screen-md-min) {
+    .dropdown-menu > li > a {
+        font-family: $font-oswald;
+        font-weight: 200;
+        padding 10px 20px;
+    }
 }
