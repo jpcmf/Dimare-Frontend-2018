@@ -91,12 +91,10 @@
                 </div>
             </div>
             <div class="col-xs-12 col-md-6 no-padding">
-                <!-- <img src="{{ asset('/img/img-map.png') }}" alt=""> -->
                 <div class="embed-responsive embed-responsive-100x400px">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4585.991273842979!2d-53.06141174876286!3d-26.100499266024382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f0733b0054baab%3A0x46eb72d1558af149!2sAv.+Duque+de+Caxias%2C+360+-+Marrecas%2C+Francisco+Beltr%C3%A3o+-+PR!5e1!3m2!1spt-BR!2sbr!4v1529545537573" width="" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-
     </section>
 @endsection

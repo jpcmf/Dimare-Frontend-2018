@@ -7017,6 +7017,69 @@ select {
 .select.select--where-to-buy select {
   color: #737373;
 }
+.radio {
+  padding-left: 20px;
+}
+.radio label {
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+}
+.radio label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out;
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.1), inset 0px 2px 0 0 #fff;
+          box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.1), inset 0px 2px 0 0 #fff;
+}
+.radio label::after {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  left: 6px;
+  top: 6px;
+  margin-left: -20px;
+  border-radius: 50%;
+  background-color: #9a2535;
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33), -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+.radio input[type="radio"] {
+  opacity: 0;
+}
+.radio input[type="radio"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.radio input[type="radio"]:checked + label::after {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.radio input[type="radio"]:disabled + label {
+  opacity: 0.65;
+}
+.radio input[type="radio"]:disabled + label::before {
+  cursor: not-allowed;
+}
+.radio.radio-inline {
+  margin-top: 0;
+}
 .navbar {
   z-index: 1;
 }
@@ -8365,6 +8428,10 @@ footer h3 {
 .contact form .btn {
   padding: 3px 12px;
 }
+.contact.contact--shopkeeper {
+  padding-bottom: 0;
+  padding-top: 0;
+}
 .contact__address {
   background-color: #841d2b;
   min-height: 294px;
@@ -8420,6 +8487,40 @@ footer h3 {
   font-size: 15px;
   letter-spacing: 0.4px;
   margin: 0;
+}
+.contact--shopkeeper {
+  background-image: none;
+}
+.contact--shopkeeper .img-shopkeeper {
+  padding-left: 80px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .contact--shopkeeper {
+    background-image: url("/img/img-shopkeeper.png");
+    background-repeat: no-repeat;
+    background-position: 130% 0;
+  }
+}
+@media (min-width: 1200px) {
+  .contact--shopkeeper {
+    background-position: 100% 0;
+  }
+}
+.contact__column-align {
+  padding: 0 15px 35px 15px;
+  margin-top: 60px;
+}
+@media (min-width: 992px) {
+  .contact__column-align {
+    max-width: 485px;
+    float: right;
+  }
+}
+.contact__column-align .label-form {
+  color: #841d2b;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 html {
   font-size: 100%;
