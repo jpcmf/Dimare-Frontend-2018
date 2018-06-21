@@ -31,7 +31,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <div class="select">
+                            <div class="select select--ambients">
                                 <select class="form-control">
                                     <option>COZINHAS</option>
                                     <option>2</option>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <div class="select">
+                            <div class="select select--ambients">
                                 <select class="form-control">
                                     <option>TODAS AS COLEÇÕES</option>
                                     <option>2</option>
