@@ -11,6 +11,10 @@
 |
 */
 
+View::composer('*', function ($view) {
+    View::share('viewName', $view->getName());
+});
+
 Route::get('/', function () {
     return view('home');
 });

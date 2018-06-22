@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 form-group">
-                        <textarea class="form-control" name="name">MENSAGEM</textarea>
+                        <textarea class="form-control" name="name" placeholder="MENSAGEM"></textarea>
                     </div>
                     <div class="col-xs-12">
                         <a href="" class="btn btn-solid btn-solid--black pull-right">ENVIAR</a>

@@ -6,6 +6,19 @@ footer {
     span {
         display: block;
     }
+
+    .row > div {
+        padding-bottom: 30px;
+
+        @media (min-width: $screen-sm-min) {
+            min-height: 180px;
+            padding-bottom 0
+        }
+
+        @media (min-width: $screen-lg-min) {
+            min-height: inherit;
+        }
+    }
 }
 
 .footer__link, footer h3 {
@@ -29,10 +42,19 @@ footer h3 {
 .footer__logo {
     margin-top: 30px;
 
-    @media (min-width: $screen-md-min) {
+    .footer__social {
+        padding-left: 100px;
+    }
+
+    @media (min-width: $screen-sm-min) {
         margin-top: 0
+        text-align: left;
+    }
+
+    @media (min-width: $screen-lg-min) {
         text-align: right;
     }
+
     img {
         max-width: 173px;
     }

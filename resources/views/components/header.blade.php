@@ -11,7 +11,7 @@
         </div>
     </div>
     @if(!empty($subtitle))
-    <div class="top__bottom hidden-xs hidden-sm">
+    <div class="top__bottom hidden-xs">
         <div class="container">
             <span class="txt">{{ $subtitle }}</span>
         </div>

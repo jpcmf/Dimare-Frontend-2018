@@ -112,10 +112,10 @@
                         <p>Notícias, dicas e tendências do universo moveleiro.</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-4">
                     <div class="blog__content">
                         <div class="blog__image">
-                            <img src="http://via.placeholder.com/238x194" alt="">
+                            <img class="img-responsive" src="http://via.placeholder.com/238x194" alt="">
                         </div>
                         <div class="blog__info">
                             <p>Lorem Ipsum. Proin gravida nibh vel velit</p>
@@ -123,10 +123,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-4">
                     <div class="blog__content">
                         <div class="blog__image">
-                            <img src="http://via.placeholder.com/238x194" alt="">
+                            <img class="img-responsive" src="http://via.placeholder.com/238x194" alt="">
                         </div>
                         <div class="blog__info">
                             <p>Lorem Ipsum. Proin gravida nibh vel velit</p>
@@ -134,10 +134,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-4">
                     <div class="blog__content">
                         <div class="blog__image">
-                            <img src="http://via.placeholder.com/238x194" alt="">
+                            <img class="img-responsive" src="http://via.placeholder.com/238x194" alt="">
                         </div>
                         <div class="blog__info">
                             <p>Lorem Ipsum. Proin gravida nibh vel velit</p>

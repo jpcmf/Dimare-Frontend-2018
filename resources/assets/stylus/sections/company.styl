@@ -173,20 +173,29 @@
     .glyphicon-chevron-left {
         display: none;
         background: url(/img/seta-esquerda.png) no-repeat center center;
-        margin-left: -120px
+
+        @media (min-width: $screen-sm-min) {
+            margin-left: -40px
+            display: block;
+        }
 
         @media (min-width: $screen-md-min) {
-            display: block;
+            margin-left: -120px
+
         }
     }
 
     .glyphicon-chevron-right {
         display: none;
         background: url(/img/seta-direita.png) no-repeat center center;
-        margin-right: -120px
+
+        @media (min-width: $screen-sm-min) {
+            display: block;
+            margin-left: -40px
+        }
 
         @media (min-width: $screen-md-min) {
-            display: block;
+            margin-right: -120px
         }
     }
 

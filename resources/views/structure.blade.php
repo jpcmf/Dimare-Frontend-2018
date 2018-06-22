@@ -13,7 +13,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="/css/app.css">
     </head>
-    <body>
+    <body class="page-{{ collect(\Request::segments())->implode('-') }}">
         <header>
             <nav class="navbar navbar-inverse">
                 <div class="container">
@@ -30,7 +30,8 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li><a href="{{ url('/empresa') }}">Empresa</a></li>
-                            <li class="dropdown">
+                            <li class="visible-xs"><a href="{{ url('/empresa') }}">Produtos</a></li>
+                            <li class="dropdown hidden-xs">
                                 <a href="{{ url('/produtos') }}" class="dropdown-toggle" data-toggle="dropdown">Produtos</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="{{ url('/produtos/ambientes') }}">AMBIENTES</a></li>
@@ -63,26 +64,26 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <span><a class="footer__link" href="{{ url('/empresa') }}">EMPRESA</a></span>
                         <span><a class="footer__link" href="{{ url('/onde-comprar') }}">ONDE COMPRAR</a></span>
                         <span><a class="footer__link" href="{{ url('/blog') }}">BLOG</a></span>
                         <span><a class="footer__link" href="{{ url('/') }}">ÁREA RESTRITA</a></span>
                     </div>
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <h3>PRODUTOS</h3>
                         <span><a class="footer__link footer__link--white" href="{{ url('/produtos/ambientes') }}">AMBIENTES</a></span>
                         <span><a class="footer__link footer__link--white" href="{{ url('/produtos/diferenciais') }}">DIFERENCIAIS</a></span>
                         <span><a class="footer__link footer__link--white" href="{{ url('/produtos/acabamentos') }}">ACABAMENTOS</a></span>
                         <span><a class="footer__link footer__link--white" href="{{ url('/produtos/colecoes') }}">COLEÇÕES</a></span>
                     </div>
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <h3>CONTATO</h3>
                         <span><a class="footer__link footer__link--white" href="{{ url('/fale-conosco') }}">FALE CONOSCO</a></span>
                         <span><a class="footer__link footer__link--white" href="{{ url('/seja-um-lojista') }}">SEJA UM LOJISTA</a></span>
                         <span><a class="footer__link footer__link--white" href="{{ url('/acompanhe-seu-pedido') }}">ACOMPANHE SEU PEDIDO</a></span>
                     </div>
-                    <div class="col-xs-12 col-md-3 footer__logo">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 footer__logo">
                         <img class="" src="{{asset('img/logo-dimare-rodape@2x.png')}}" alt="Dimare">
                         <ul class="list-inline footer__social">
                             <li><a href="https://www.instagram.com/dimare.fabrica"><img src="{{asset('img/instagram@2x.png')}}" alt="Instagram"></a></li>

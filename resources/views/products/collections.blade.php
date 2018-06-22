@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <div class="top__bottom hidden-xs hidden-sm">
+        <div class="top__bottom hidden-xs">
             <div class="container">
                 <span class="txt">Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
             </div>

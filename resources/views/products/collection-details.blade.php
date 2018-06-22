@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div class="top__bottom hidden-xs hidden-sm">
+        <div class="top__bottom hidden-xs">
             <div class="container">
                 <span class="txt">Laca Slim: qualidade e tecnologia europeia</span>
             </div>
