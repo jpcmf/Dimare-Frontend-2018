@@ -30,7 +30,7 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li><a href="{{ url('/empresa') }}">Empresa</a></li>
-                            <li class="visible-xs"><a href="{{ url('/empresa') }}">Produtos</a></li>
+                            <li class="visible-xs"><a href="{{ url('/produtos') }}">Produtos</a></li>
                             <li class="dropdown hidden-xs">
                                 <a href="{{ url('/produtos') }}" class="dropdown-toggle" data-toggle="dropdown">Produtos</a>
                                 <ul class="dropdown-menu">
