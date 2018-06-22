@@ -19,7 +19,7 @@
 						<div class="carousel-caption">
 							<h1>Conheça a laca slim</h1>
 							<p>Padrões de cores e acabamento superiores, com qualidade e tecnologia europeias.</p>
-							<a class="bt btn-azul btn-cotacao" href="{{ Lang::get('url.cotacao') }}" role="button">Saiba mais</a>
+							<a class="bt btn-azul btn-cotacao" href="#" role="button">Saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -30,7 +30,7 @@
 						<div class="carousel-caption">
 							<h1>Onde comprar</h1>
 							<p>Encontre a loja Dimare mais perto de você!</p>
-							<a class="bt btn-azul btn-cotacao" href="{{ Lang::get('url.cotacao') }}" role="button">Ver lojas</a>
+							<a class="bt btn-azul btn-cotacao" href="#" role="button">Ver lojas</a>
 						</div>
 					</div>
 				</div>
@@ -41,7 +41,7 @@
 						<div class="carousel-caption">
 							<h1>50 anos de tradição</h1>
 							<p>A fábrica de móveis planejados mais querida do Brasil completou meio século!</p>
-							<a class="bt btn-azul btn-cotacao" href="{{ Lang::get('url.cotacao') }}" role="button">Ver história</a>
+							<a class="bt btn-azul btn-cotacao" href="#" role="button">Ver história</a>
 						</div>
 					</div>
 				</div>

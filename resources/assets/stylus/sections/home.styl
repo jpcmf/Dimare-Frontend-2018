@@ -268,15 +268,20 @@
 }
 
 .customer__inside {
-    background: url(/img/dots-background-black.png) no-repeat center center
+    background: url(/img/dots-background-black.png) repeat center center
     color: #fff;
-    max-width: 468px;
+    max-width: 50%;
     height: 390px;
     display: flex
     align-items: center
     justify-content: center
     flex-direction: column
     text-align: center
+    padding: 10px
+
+    @media (max-width: 650px) {
+        max-width: 100%;
+    }
 
     h2 {
         font-family: $font-oswald;

@@ -7507,9 +7507,9 @@ footer h3 {
   background: url("/img/img-lojista.png") no-repeat center center;
 }
 .customer__inside {
-  background: url("/img/dots-background-black.png") no-repeat center center;
+  background: url("/img/dots-background-black.png") repeat center center;
   color: #fff;
-  max-width: 468px;
+  max-width: 50%;
   height: 390px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7525,6 +7525,12 @@ footer h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  padding: 10px;
+}
+@media (max-width: 650px) {
+  .customer__inside {
+    max-width: 100%;
+  }
 }
 .customer__inside h2 {
   font-family: 'Oswald', sans-serif;
