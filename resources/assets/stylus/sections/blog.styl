@@ -158,7 +158,9 @@
 .blog__categories,
 .blog__tags,
 .blog__reads {
-    padding 0 23px
+    padding 0 15px
+    max-width: 750px;
+    margin: 0 auto;
 
     h4 {
         color: $brand-secondary;
@@ -176,17 +178,24 @@
         color: $text-color;
         display: inline-block;
     }
+
+    @media (min-width: $screen-md-min) {
+        padding 0 23px
+
+    }
 }
 
 .blog__search {
     margin-bottom 30px
     margin-top 60px
-    max-width: 277px;
+    max-width: 750px;
+    // margin-left: 0
 
     input {
         background: url('/img/icon-lupa.png') no-repeat 97% center;
         background-size: 15px;
         font-style: italic;
+        max-width: 277px;
     }
 }
 

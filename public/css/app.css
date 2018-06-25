@@ -8799,7 +8799,9 @@ footer h3 {
 .blog__categories,
 .blog__tags,
 .blog__reads {
-  padding: 0 23px;
+  padding: 0 15px;
+  max-width: 750px;
+  margin: 0 auto;
 }
 .blog__search h4,
 .blog__categories h4,
@@ -8820,15 +8822,24 @@ footer h3 {
   color: #161515;
   display: inline-block;
 }
+@media (min-width: 992px) {
+  .blog__search,
+  .blog__categories,
+  .blog__tags,
+  .blog__reads {
+    padding: 0 23px;
+  }
+}
 .blog__search {
   margin-bottom: 30px;
   margin-top: 60px;
-  max-width: 277px;
+  max-width: 750px;
 }
 .blog__search input {
   background: url("/img/icon-lupa.png") no-repeat 97% center;
   background-size: 15px;
   font-style: italic;
+  max-width: 277px;
 }
 .blog__categories span {
   display: block;
