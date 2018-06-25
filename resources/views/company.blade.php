@@ -117,21 +117,21 @@
                                 <div class="item active">
                                     <img src="{{asset('/img/img-social1.png')}}" alt="">
                                     <div class="carousel-caption">
-            							<p>Brinquedoteca1 - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
+            							<p><strong>Brinquedoteca1</strong> - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
             						</div>
                                 </div>
 
                                 <div class="item">
                                     <img src="{{asset('/img/img-social1.png')}}" alt="">
                                     <div class="carousel-caption">
-            							<p>Brinquedoteca2 - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
+            							<p><strong>Brinquedoteca2</strong> - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
             						</div>
                                 </div>
 
                                 <div class="item">
                                     <img src="{{asset('/img/img-social1.png')}}" alt="">
                                     <div class="carousel-caption">
-            							<p>Brinquedoteca3 - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
+            							<p><strong>Brinquedoteca3</strong> - Em parceria com a Prefeitura, a Dimare realiza a doação de toda a mobília para brinquedotecas de escolas e CEMI’s Municipais. </p>
             						</div>
                                 </div>
                             </div>

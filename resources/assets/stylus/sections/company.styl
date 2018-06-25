@@ -170,8 +170,15 @@
         display: none;
     }
 
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right {
+        height: 30px;
+        width: 30px;
+        margin-left: -20px
+    }
+
     .glyphicon-chevron-left {
-        display: none;
+        // display: none;
         background: url(/img/seta-esquerda.png) no-repeat center center;
 
         @media (min-width: $screen-sm-min) {
@@ -186,7 +193,7 @@
     }
 
     .glyphicon-chevron-right {
-        display: none;
+        // display: none;
         background: url(/img/seta-direita.png) no-repeat center center;
 
         @media (min-width: $screen-sm-min) {
@@ -207,7 +214,7 @@
     .carousel-caption {
         bottom: -65px
         color: $text-color;
-        font-size: 15px;
+        font-size: 14px;
         left: 0
         padding: 0
         right: 0
@@ -216,10 +223,12 @@
 
         p {
             margin: 0 0 0 15px;
+            padding-right: 5px;
         }
 
         @media (min-width: $screen-sm-min) {
             bottom: -55px
+            font-size: 15px;
         }
 
         @media (min-width: $screen-md-min) {

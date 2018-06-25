@@ -7740,8 +7740,13 @@ footer h3 {
 .social__carousel .carousel-indicators {
   display: none;
 }
+.social__carousel .glyphicon-chevron-left,
+.social__carousel .glyphicon-chevron-right {
+  height: 30px;
+  width: 30px;
+  margin-left: -20px;
+}
 .social__carousel .glyphicon-chevron-left {
-  display: none;
   background: url("/img/seta-esquerda.png") no-repeat center center;
 }
 @media (min-width: 768px) {
@@ -7756,7 +7761,6 @@ footer h3 {
   }
 }
 .social__carousel .glyphicon-chevron-right {
-  display: none;
   background: url("/img/seta-direita.png") no-repeat center center;
 }
 @media (min-width: 768px) {
@@ -7777,7 +7781,7 @@ footer h3 {
 .social__carousel .carousel-caption {
   bottom: -65px;
   color: #161515;
-  font-size: 15px;
+  font-size: 14px;
   left: 0;
   padding: 0;
   right: 0;
@@ -7786,10 +7790,12 @@ footer h3 {
 }
 .social__carousel .carousel-caption p {
   margin: 0 0 0 15px;
+  padding-right: 5px;
 }
 @media (min-width: 768px) {
   .social__carousel .carousel-caption {
     bottom: -55px;
+    font-size: 15px;
   }
 }
 @media (min-width: 992px) {
