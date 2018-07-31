@@ -1,31 +1,20 @@
-DIMARE
-=============
+# Dimare 2018
 
-Instalação
------------
-
+## Run project
 ```
 composer install
 npm install
+copy content of .env.example to new one .env
 ```
-
-## Copiar conteúdo de .env.example
-## Criar novo .env e colar o conteúdo
-
-## Gerar nova key para o .env
+## Generate new key to .env
 ```
 php artisan key:generate
 ```
-
-Uso
------------
-
-## Subir o Laravel
+## Up Laravel
 ```
 php artisan serve
 ```
-
-Durante o desenvolvimento, para recompilar o stylus
+## Compile Stylus
 ```
 npm run watch
 ```
